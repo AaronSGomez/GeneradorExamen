@@ -61,7 +61,7 @@ function verificarRespuesta(respuestaSeleccionada) {
     if (respuestaSeleccionada === respuestaCorrectaTexto) {
         aciertos ++;
         respuestaDiv.innerHTML = `¡Correcto!`;
-        respuestaDiv.style.color = "black";
+        respuestaDiv.style.color = "whitesmoke";
     } else {
         respuestaDiv.innerHTML = `Incorrecto. La respuesta correcta es: ${respuestaCorrectaTexto}`;
         respuestaDiv.style.color = "crimson";
