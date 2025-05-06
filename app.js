@@ -11,17 +11,20 @@ async function cargarXML() {
   const xmlDoc = parser.parseFromString(text, "text/xml");
 
   // Acceder a las preguntas dentro de <Cuestionario>
-   const preguntas = Array.from(xmlDoc.getElementsByTagName("pregunta")).map(p => ({
-      enunciado: p.getElementsByTagName("enunciado")[0].textContent,
-      A: p.getElementsByTagName("A")[0].textContent,
-      B: p.getElementsByTagName("B")[0].textContent,
-      C: p.getElementsByTagName("C")[0].textContent,
-      D: p.getElementsByTagName("D")[0].textContent,
-      respuestaCorrecta: p.getElementsByTagName("respuesta_correcta")[0].textContent
+  const preguntas = Array.from(xmlDoc.getElementsByTagName("pregunta")).map(p => ({
+    enunciado: p.getElementsByTagName("enunciado")[0]?.textContent ?? "",
+    A: p.getElementsByTagName("A")[0]?.textContent ?? "",
+    B: p.getElementsByTagName("B")[0]?.textContent ?? "",
+    C: p.getElementsByTagName("C")[0]?.textContent ?? "",
+    D: p.getElementsByTagName("D")[0]?.textContent ?? "",
+    respuestaCorrecta: p.getElementsByTagName("respuesta_correcta")[0]?.textContent ?? ""
   }));
   seleccion =obtenerPreguntasAleatorias(preguntas);
   mostrarPregunta();
 }
+
+
+
 
 //mostramos la pregunta
 function mostrarPregunta() {

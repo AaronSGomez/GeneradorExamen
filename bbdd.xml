@@ -1,0 +1,2784 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preguntas>
+    <pregunta id="1">
+        <enunciado>
+            ¿Cómo se denomina el tipo de atributo que representa "Teléfono"?
+        </enunciado>
+        <opciones>
+            <opcion>
+                a) Multievaluado
+            </opcion>
+            <opcion>
+                b) Multivalor
+            </opcion>
+            <opcion>
+                c) De alto valor
+            </opcion>
+            <opcion>
+                d) Multivaluado
+            </opcion>
+        </opciones>
+        <respuesta>
+            d
+        </respuesta>
+        <explicacion>
+            La respuesta correcta es: Multivaluado
+        </explicacion>
+    </pregunta>
+    <pregunta id="2">
+        <enunciado>
+            Según este diagrama ¿Qué campos contendrá la tabla "Ingeniero"?
+        </enunciado>
+        <opciones>
+            <opcion>
+                a) Ninguno
+            </opcion>
+            <opcion>
+                b) IdEmpleado, Especialidad, AñosExperiencia
+            </opcion>
+            <opcion>
+                c) IdEmpleado, Especialidad, AñosExperiencia, Nombre, Dirección, Fechanacimiento, Salario, Puesto
+            </opcion>
+            <opcion>
+                d) Especialidad, AñosExperiencia
+            </opcion>
+        </opciones>
+        <respuesta>
+            b
+        </respuesta>
+        <explicacion>
+            La respuesta correcta es: IdEmpleado, Especialidad, AñosExperiencia
+        </explicacion>
+    </pregunta>
+    <pregunta id="3">
+        <enunciado>
+            Tal y como se muestra la imagen, ¿Cuántos teléfonos puede tener un cliente?
+        </enunciado>
+        <opciones>
+            <opcion>
+                a) Ninguna de las anteriores
+            </opcion>
+            <opcion>
+                b) 1
+            </opcion>
+            <opcion>
+                c) Indefinidos
+            </opcion>
+            <opcion>
+                d) 10
+            </opcion>
+        </opciones>
+        <respuesta>
+            c
+        </respuesta>
+        <explicacion>
+            La respuesta correcta es: Indefinidos
+        </explicacion>
+    </pregunta>
+    <pregunta id="4">
+        <enunciado>
+            ¿Cómo se lleva a cabo el paso a tablas del atributo teléfono?
+        </enunciado>
+        <opciones>
+            <opcion>
+                a) Se crea una tabla con los atributos (IDTELÉFONO, TELÉFONO)
+            </opcion>
+            <opcion>
+                b) Se añade como clave foránea de tabla Cliente
+            </opcion>
+            <opcion>
+                c) Se crea una tabla con los atributos ((FK)IDCLIENTE, TELÉFONO)
+            </opcion>
+            <opcion>
+                d) Se reservan 10 columnas (Teléfono1, Teléfono2, ...) en la tabla Cliente
+            </opcion>
+        </opciones>
+        <respuesta>
+            c
+        </respuesta>
+        <explicacion>
+            La respuesta correcta es: Se crea una tabla con los atributos ((FK)IDCLIENTE, TELÉFONO)
+        </explicacion>
+    </pregunta>
+    <pregunta id="5">
+        <enunciado>
+            ¿Según este diagrama un empleado puede ser arquitecto y administrativo a la vez?
+        </enunciado>
+        <opciones>
+            <opcion>
+                a) No, porque solo un Dios y un gato (porque es gato y araña) puede ser dos cosas a la vez.
+            </opcion>
+            <opcion>
+                b) Sí claro.
+            </opcion>
+            <opcion>
+                c) No, porque es una generalización disjunta.
+            </opcion>
+            <opcion>
+                d) Depende.
+            </opcion>
+        </opciones>
+        <respuesta>
+            c
+        </respuesta>
+        <explicacion>
+            La respuesta correcta es: No, porque es una generalización disjunta.
+        </explicacion>
+    </pregunta>
+    <pregunta id="6">
+        <enunciado>
+            ¿Por qué hay un atributo rodeado de una línea discontinua en este diagrama?
+        </enunciado>
+        <opciones>
+            <opcion>
+                a) Es un atributo calculado
+            </opcion>
+            <opcion>
+                b) Ninguna de las anteriores
+            </opcion>
+            <opcion>
+                c) Queda bonito
+            </opcion>
+            <opcion>
+                d) Es un atributo multivaluado
+            </opcion>
+        </opciones>
+        <respuesta>
+            a
+        </respuesta>
+        <explicacion>
+            La respuesta correcta es: Es un atributo calculado
+        </explicacion>
+    </pregunta>
+    <pregunta id="7">
+        <enunciado>
+            ¿Cómo pasaría a tablas el atributo antigüedad?
+        </enunciado>
+        <opciones>
+            <opcion>
+                a) Las tablas no existen, son los padres
+            </opcion>
+            <opcion>
+                b) No se pueden incluir campos con símbolos como ¨
+            </opcion>
+            <opcion>
+                c) No se pasa a tablas por que se calculará cada vez que se consulte
+            </opcion>
+            <opcion>
+                d) Se crea una nueva tabla Antigüedad_Camarero((FK)idCamarero, Antigüedad)
+            </opcion>
+        </opciones>
+        <respuesta>
+            c
+        </respuesta>
+        <explicacion>
+            La respuesta correcta es: No se pasa a tablas por que se calculará cada vez que se consulte
+        </explicacion>
+    </pregunta>
+    <pregunta id="8">
+        <enunciado>
+            ¿Detectas algún problema en este diagrama?
+        </enunciado>
+        <opciones>
+            <opcion>
+                a) Faltan relaciones
+            </opcion>
+            <opcion>
+                b) No
+            </opcion>
+            <opcion>
+                c) idCamarero no puede ser clave primaria
+            </opcion>
+            <opcion>
+                d) No hay un campo que nos permita calcular "antigüedad"
+            </opcion>
+        </opciones>
+        <respuesta>
+            d
+        </respuesta>
+        <explicacion>
+            La respuesta correcta es: No hay un campo que nos permita calcular "antigüedad"
+        </explicacion>
+    </pregunta>
+    <pregunta id="9">
+        <enunciado>
+            ¿Cómo se calcula "antigüedad"?
+        </enunciado>
+        <opciones>
+            <opcion>
+                a) Se pide al usuario cada vez que se necesita
+            </opcion>
+            <opcion>
+                b) Hay que guardar un "TimeStamp" cuando se registre el camarero, y se resta la fecha actual cada vez
+                que se consulta.
+            </opcion>
+            <opcion>
+                c) Todas las bases de datos del mundo están interconectadas y se busca el dato en ellas
+            </opcion>
+            <opcion>
+                d) En base a la fecha de incorporación
+            </opcion>
+        </opciones>
+        <respuesta>
+            d
+        </respuesta>
+        <explicacion>
+            La respuesta correcta es: En base a la fecha de incorporación
+        </explicacion>
+    </pregunta>
+    <pregunta id="10">
+        <enunciado>
+            ¿Cómo pasamos a tablas el atributo "F. Inicio"?
+        </enunciado>
+        <opciones>
+            <opcion>
+                a) Se crea una tabla Autores_Cursos((FK)CodigoEmpleado, (FK)CodigoCurso, F.Inicio)
+            </opcion>
+            <opcion>
+                b) No se pasa a tablas
+            </opcion>
+            <opcion>
+                c) Se incorpora a la tabla Empleados
+            </opcion>
+            <opcion>
+                d) Se incorpora a la tabla Cursos
+            </opcion>
+        </opciones>
+        <respuesta>
+            a
+        </respuesta>
+        <explicacion>
+            La respuesta correcta es: Se crea una tabla Autores_Cursos((FK)CodigoEmpleado, (FK)CodigoCurso, F.Inicio)
+        </explicacion>
+    </pregunta>
+    <pregunta id="11">
+        <enunciado>
+            En la tabla Camarero_Emite_Ticket, que se genera con la relación "Emite", ¿Cuál será la clave primaria?
+        </enunciado>
+        <opciones>
+            <opcion>
+                a) (FK)IDCAMARERO
+            </opcion>
+            <opcion>
+                b) ((FK)IDCAMARERO, (FK)IDTICKET)
+            </opcion>
+            <opcion>
+                c) (FK)IDTICKET
+            </opcion>
+            <opcion>
+                d) idEmite
+            </opcion>
+        </opciones>
+        <respuesta>
+            b
+        </respuesta>
+        <explicacion>
+            La respuesta correcta es: ((FK)IDCAMARERO, (FK)IDTICKET)
+        </explicacion>
+    </pregunta>
+    <pregunta id="12">
+        <enunciado>
+            ¿Qué tipo de entidad es "Línea Ticket"?
+        </enunciado>
+        <opciones>
+            <opcion>
+                a) Entidad débil
+            </opcion>
+            <opcion>
+                b) Entidad floja
+            </opcion>
+            <opcion>
+                c) Entidad multivaluada
+            </opcion>
+            <opcion>
+                d) Entidad normal
+            </opcion>
+        </opciones>
+        <respuesta>
+            a
+        </respuesta>
+        <explicacion>
+            La respuesta correcta es: Entidad débil
+        </explicacion>
+    </pregunta>
+    <pregunta id="13">
+        <enunciado>
+            ¿Cuál será la clave de Línea Ticket?
+        </enunciado>
+        <opciones>
+            <opcion>
+                a) idLinea
+            </opcion>
+            <opcion>
+                b) NumLinea, idLinea
+            </opcion>
+            <opcion>
+                c) NumTicket, NumLinea
+            </opcion>
+            <opcion>
+                d) NumTicket
+            </opcion>
+        </opciones>
+        <respuesta>
+            c
+        </respuesta>
+        <explicacion>
+            La respuesta correcta es: NumTicket, NumLinea
+        </explicacion>
+    </pregunta>
+    <pregunta id="14">
+        <enunciado>
+            Un médico puede atender a varios pacientes, y un paciente puede ser atendido por varios médicos. ¿Cuál es la
+            cardinalidad?
+        </enunciado>
+        <opciones>
+            <opcion>
+                a) uno a uno
+            </opcion>
+            <opcion>
+                b) muchos a muchos
+            </opcion>
+            <opcion>
+                c) muchos a uno
+            </opcion>
+            <opcion>
+                d) uno a muchos
+            </opcion>
+        </opciones>
+        <respuesta>
+            b
+        </respuesta>
+        <explicacion>
+            La respuesta correcta es: muchos a muchos
+        </explicacion>
+    </pregunta>
+    <pregunta id="15">
+        <enunciado>
+            ¿Qué instrucción SQL crea una tabla llamada 'Empleado'?
+        </enunciado>
+        <opciones>
+            <opcion>
+                a) ADD TABLE Empleado (id INT, nombre VARCHAR(100));
+            </opcion>
+            <opcion>
+                b) NEW TABLE Empleado (id INT, nombre VARCHAR(100));
+            </opcion>
+            <opcion>
+                c) ALTER TABLE Empleado ADD COLUMN (id INT, nombre VARCHAR(100));
+            </opcion>
+            <opcion>
+                d) CREATE TABLE Empleado (id INT, nombre VARCHAR(100));
+            </opcion>
+        </opciones>
+        <respuesta>
+            d
+        </respuesta>
+        <explicacion>
+            La respuesta correcta es: CREATE TABLE Empleado (id INT, nombre VARCHAR(100));
+        </explicacion>
+    </pregunta>
+    <pregunta id="16">
+        <enunciado>
+            ¿Cuál es la manera correcta de añadir una columna a una tabla existente usando SQL?
+        </enunciado>
+        <opciones>
+            <opcion>
+                a) CREATE TABLE Empleado ADD edad INT;
+            </opcion>
+            <opcion>
+                b) ALTER TABLE Empleado ADD COLUMN edad INT;
+            </opcion>
+            <opcion>
+                c) ADD COLUMN edad INT IN Empleado;
+            </opcion>
+            <opcion>
+                d) UPDATE TABLE Empleado ADD edad INT;
+            </opcion>
+        </opciones>
+        <respuesta>
+            b
+        </respuesta>
+        <explicacion>
+            La respuesta correcta es: ALTER TABLE Empleado ADD COLUMN edad INT;
+        </explicacion>
+    </pregunta>
+    <pregunta id="17">
+        <enunciado>
+            ¿Qué cláusula indica que una columna no puede tener valores repetidos?
+        </enunciado>
+        <opciones>
+            <opcion>
+                a) PRIMARY KEY
+            </opcion>
+            <opcion>
+                b) CHECK
+            </opcion>
+            <opcion>
+                c) UNIQUE
+            </opcion>
+            <opcion>
+                d) DEFAULT
+            </opcion>
+        </opciones>
+        <respuesta>
+            c
+        </respuesta>
+        <explicacion>
+            La respuesta correcta es: UNIQUE
+        </explicacion>
+    </pregunta>
+    <pregunta id="18">
+        <enunciado>
+            ¿Cuál opción permite establecer automáticamente valores numéricos incrementales en una columna?
+        </enunciado>
+        <opciones>
+            <opcion>
+                a) AUTONUMBER
+            </opcion>
+            <opcion>
+                b) AUTOINCREMENTAL
+            </opcion>
+            <opcion>
+                c) AUTO_INCREMENT
+            </opcion>
+            <opcion>
+                d) AUTO_NUM
+            </opcion>
+        </opciones>
+        <respuesta>
+            c
+        </respuesta>
+        <explicacion>
+            La respuesta correcta es: AUTO_INCREMENT
+        </explicacion>
+    </pregunta>
+    <pregunta id="19">
+        <enunciado>
+            ¿Cómo definirías una columna con valores por defecto usando SQL?
+        </enunciado>
+        <opciones>
+            <opcion>
+                a) Telefono VARCHAR(15) AUTO 'Desconocido'
+            </opcion>
+            <opcion>
+                b) Telefono VARCHAR(15) SET 'Desconocido'
+            </opcion>
+            <opcion>
+                c) Telefono VARCHAR(15) DEFAULT 'Desconocido'
+            </opcion>
+            <opcion>
+                d) Telefono VARCHAR(15) VALUE 'Desconocido'
+            </opcion>
+        </opciones>
+        <respuesta>
+            c
+        </respuesta>
+        <explicacion>
+            La respuesta correcta es: Telefono VARCHAR(15) DEFAULT 'Desconocido'
+        </explicacion>
+    </pregunta>
+    <pregunta id="20">
+        <enunciado>
+            ¿Qué instrucción SQL eliminaría la columna 'Telefono' de la tabla 'Empleado'?
+        </enunciado>
+        <opciones>
+            <opcion>
+                a) ALTER TABLE Empleado DROP COLUMN Telefono;
+            </opcion>
+            <opcion>
+                b) ALTER TABLE Empleado REMOVE Telefono;
+            </opcion>
+            <opcion>
+                c) ALTER TABLE Empleado DELETE COLUMN Telefono;
+            </opcion>
+            <opcion>
+                d) DROP COLUMN Telefono FROM Empleado;
+            </opcion>
+        </opciones>
+        <respuesta>
+            a
+        </respuesta>
+        <explicacion>
+            La respuesta correcta es: ALTER TABLE Empleado DROP COLUMN Telefono;
+        </explicacion>
+    </pregunta>
+    <pregunta id="21">
+        <enunciado>
+            ¿Qué restricción asegura que una columna nunca contenga valores nulos?
+        </enunciado>
+        <opciones>
+            <opcion>
+                a) DEFAULT
+            </opcion>
+            <opcion>
+                b) NOT NULL
+            </opcion>
+            <opcion>
+                c) CHECK
+            </opcion>
+            <opcion>
+                d) UNIQUE
+            </opcion>
+        </opciones>
+        <respuesta>
+            b
+        </respuesta>
+        <explicacion>
+            La respuesta correcta es: NOT NULL
+        </explicacion>
+    </pregunta>
+    <pregunta id="22">
+        <enunciado>
+            ¿Cuál de estas instrucciones crea correctamente una clave primaria compuesta en SQL?
+        </enunciado>
+        <opciones>
+            <opcion>
+                a) PRIMARY(id_empleado, id_proyecto)
+            </opcion>
+            <opcion>
+                b) SET PRIMARY KEY(id_empleado, id_proyecto)
+            </opcion>
+            <opcion>
+                c) PRIMARY KEY(id_empleado, id_proyecto)
+            </opcion>
+            <opcion>
+                d) PRIMARY KEY COMPOSED(id_empleado, id_proyecto)
+            </opcion>
+        </opciones>
+        <respuesta>
+            c
+        </respuesta>
+        <explicacion>
+            La respuesta correcta es: PRIMARY KEY(id_empleado, id_proyecto)
+        </explicacion>
+    </pregunta>
+    <pregunta id="23">
+        <enunciado>
+            ¿Qué sentencia SQL modificaría el tipo de dato de la columna 'salario' a DECIMAL(12,2)?
+        </enunciado>
+        <opciones>
+            <opcion>
+                a) ALTER TABLE empleados MODIFY COLUMN salario DECIMAL(12,2);
+            </opcion>
+            <opcion>
+                b) ALTER TABLE empleados UPDATE salario DECIMAL(12,2);
+            </opcion>
+            <opcion>
+                c) ALTER salario COLUMN DECIMAL(12,2);
+            </opcion>
+            <opcion>
+                d) CHANGE COLUMN salario DECIMAL(12,2);
+            </opcion>
+        </opciones>
+        <respuesta>
+            a
+        </respuesta>
+        <explicacion>
+            La respuesta correcta es: ALTER TABLE empleados MODIFY COLUMN salario DECIMAL(12,2);
+        </explicacion>
+    </pregunta>
+    <pregunta id="24">
+        <enunciado>
+            ¿Cuál de las siguientes instrucciones SQL añade una restricción UNIQUE sobre la columna 'Email'?
+        </enunciado>
+        <opciones>
+            <opcion>
+                a) ALTER TABLE empleados ADD CONSTRAINT UNIQUE (Email);
+            </opcion>
+            <opcion>
+                b) ALTER TABLE empleados ADD COLUMN UNIQUE Email;
+            </opcion>
+            <opcion>
+                c) ALTER empleados TABLE UNIQUE Email;
+            </opcion>
+            <opcion>
+                d) SET UNIQUE Email ON empleados;
+            </opcion>
+        </opciones>
+        <respuesta>
+            a
+        </respuesta>
+        <explicacion>
+            La respuesta correcta es: ALTER TABLE empleados ADD CONSTRAINT UNIQUE (Email);
+        </explicacion>
+    </pregunta>
+    <pregunta id="25">
+        <enunciado>
+            ¿Cuál consulta devuelve todos los empleados ordenados por salario descendente?
+        </enunciado>
+        <opciones>
+            <opcion>
+                a) SELECT * FROM empleados ORDER salario DESC;
+            </opcion>
+            <opcion>
+                b) SELECT salario DESC FROM empleados;
+            </opcion>
+            <opcion>
+                c) SELECT * FROM empleados SORT salario DESC;
+            </opcion>
+            <opcion>
+                d) SELECT * FROM empleados ORDER BY salario DESC;
+            </opcion>
+        </opciones>
+        <respuesta>
+            d
+        </respuesta>
+        <explicacion>
+            La respuesta correcta es: SELECT * FROM empleados ORDER BY salario DESC;
+        </explicacion>
+    </pregunta>
+    <pregunta id="26">
+        <enunciado>
+            ¿Qué función SQL usarías para contar el número total de empleados en una tabla?
+        </enunciado>
+        <opciones>
+            <opcion>
+                a) COUNT()
+            </opcion>
+            <opcion>
+                b) TOTAL()
+            </opcion>
+            <opcion>
+                c) SUM()
+            </opcion>
+            <opcion>
+                d) AVG()
+            </opcion>
+        </opciones>
+        <respuesta>
+            a
+        </respuesta>
+        <explicacion>
+            La respuesta correcta es: COUNT()
+        </explicacion>
+    </pregunta>
+    <pregunta id="27">
+        <enunciado>
+            ¿Cuál consulta calcula el salario promedio de todos los empleados?
+        </enunciado>
+        <opciones>
+            <opcion>
+                a) SELECT SUM(salario) FROM empleados;
+            </opcion>
+            <opcion>
+                b) SELECT AVG(salario) FROM empleados;
+            </opcion>
+            <opcion>
+                c) SELECT TOTAL(salario) FROM empleados;
+            </opcion>
+            <opcion>
+                d) SELECT COUNT(salario) FROM empleados;
+            </opcion>
+        </opciones>
+        <respuesta>
+            b
+        </respuesta>
+        <explicacion>
+            La respuesta correcta es: SELECT AVG(salario) FROM empleados;
+        </explicacion>
+    </pregunta>
+    <pregunta id="28">
+        <enunciado>
+            ¿Qué sentencia SQL devuelve cuántos empleados hay por cada departamento?
+        </enunciado>
+        <opciones>
+            <opcion>
+                a) SELECT departamento, COUNT(*) FROM empleados GROUP BY departamento;
+            </opcion>
+            <opcion>
+                b) SELECT departamento, SUM(*) FROM empleados;
+            </opcion>
+            <opcion>
+                c) SELECT departamento, COUNT(*) FROM empleados GROUP BY salario;
+            </opcion>
+            <opcion>
+                d) SELECT departamento, COUNT(*) FROM empleados ORDER BY departamento;
+            </opcion>
+        </opciones>
+        <respuesta>
+            a
+        </respuesta>
+        <explicacion>
+            La respuesta correcta es: SELECT departamento, COUNT(*) FROM empleados GROUP BY departamento;
+        </explicacion>
+    </pregunta>
+    <pregunta id="29">
+        <enunciado>
+            ¿Qué instrucción SQL devuelve todos los empleados cuyo salario es superior a 3000?
+        </enunciado>
+        <opciones>
+            <opcion>
+                a) SELECT nombre FROM empleados HAVING salario &amp;gt; 3000;
+            </opcion>
+            <opcion>
+                b) SELECT nombre FROM empleados SALARIO &amp;gt; 3000;
+            </opcion>
+            <opcion>
+                c) SELECT nombre FROM empleados ORDER BY salario &amp;gt; 3000;
+            </opcion>
+            <opcion>
+                d) SELECT nombre FROM empleados WHERE salario &amp;gt; 3000;
+            </opcion>
+        </opciones>
+        <respuesta>
+            d
+        </respuesta>
+        <explicacion>
+            La respuesta correcta es: SELECT nombre FROM empleados WHERE salario &amp;gt; 3000;
+        </explicacion>
+    </pregunta>
+    <pregunta id="30">
+        <enunciado>
+            ¿Qué consulta devuelve los empleados que tienen un salario superior al salario promedio general de la
+            empresa?
+        </enunciado>
+        <opciones>
+            <opcion>
+                a) SELECT nombre FROM empleados WHERE salario &amp;gt; AVG(salario);
+            </opcion>
+            <opcion>
+                b) SELECT nombre FROM empleados HAVING salario &amp;gt; AVG(salario);
+            </opcion>
+            <opcion>
+                c) SELECT nombre FROM empleados WHERE salario &amp;gt; (SELECT AVG(salario) FROM empleados);
+            </opcion>
+            <opcion>
+                d) SELECT AVG(salario) FROM empleados WHERE salario &amp;gt; promedio;
+            </opcion>
+        </opciones>
+        <respuesta>
+            c
+        </respuesta>
+        <explicacion>
+            La respuesta correcta es: SELECT nombre FROM empleados WHERE salario &amp;gt; (SELECT AVG(salario) FROM
+            empleados);
+        </explicacion>
+    </pregunta>
+    <pregunta id="31">
+        <enunciado>
+            ¿Qué cláusula se utiliza para filtrar resultados agrupados por condiciones específicas?
+        </enunciado>
+        <opciones>
+            <opcion>
+                a) HAVING
+            </opcion>
+            <opcion>
+                b) GROUP BY
+            </opcion>
+            <opcion>
+                c) ORDER BY
+            </opcion>
+            <opcion>
+                d) WHERE
+            </opcion>
+        </opciones>
+        <respuesta>
+            a
+        </respuesta>
+        <explicacion>
+            La respuesta correcta es: HAVING
+        </explicacion>
+    </pregunta>
+    <pregunta id="32">
+        <enunciado>
+            ¿Qué consulta obtiene los departamentos cuyo salario promedio supera los 4000 euros?
+        </enunciado>
+        <opciones>
+            <opcion>
+                a) SELECT departamento FROM empleados WHERE AVG(salario) &amp;gt; 4000;
+            </opcion>
+            <opcion>
+                b) SELECT departamento, AVG(salario) FROM empleados;
+            </opcion>
+            <opcion>
+                c) SELECT departamento FROM empleados GROUP BY departamento HAVING AVG(salario) &amp;gt; 4000;
+            </opcion>
+            <opcion>
+                d) SELECT departamento FROM empleados GROUP BY departamento WHERE AVG(salario) &amp;gt; 4000;
+            </opcion>
+        </opciones>
+        <respuesta>
+            c
+        </respuesta>
+        <explicacion>
+            La respuesta correcta es: SELECT departamento FROM empleados GROUP BY departamento HAVING AVG(salario) &amp;gt;
+            4000;
+        </explicacion>
+    </pregunta>
+    <pregunta id="33">
+        <enunciado>
+            ¿Cuál consulta obtiene los empleados junto con sus departamentos (considerando que todos tienen departamento
+            asignado)?
+        </enunciado>
+        <opciones>
+            <opcion>
+                a) SELECT empleados.nombre, departamentos.nombre FROM empleados RIGHT JOIN departamentos ON
+                empleados.id_departamento = departamentos.id_departamento;
+            </opcion>
+            <opcion>
+                b) SELECT empleados.nombre, departamentos.nombre FROM empleados JOIN departamentos ON
+                empleados.id_departamento = departamentos.id_departamento;
+            </opcion>
+            <opcion>
+                c) SELECT empleados.nombre, departamentos.nombre FROM empleados OUTER JOIN departamentos ON
+                empleados.id_departamento = departamentos.id_departamento;
+            </opcion>
+            <opcion>
+                d) SELECT empleados.nombre, departamentos.nombre FROM empleados LEFT JOIN departamentos ON
+                empleados.id_departamento = departamentos.id_departamento;
+            </opcion>
+        </opciones>
+        <respuesta>
+            b
+        </respuesta>
+        <explicacion>
+            La respuesta correcta es: SELECT empleados.nombre, departamentos.nombre FROM empleados JOIN departamentos ON
+            empleados.id_departamento = departamentos.id_departamento;
+        </explicacion>
+    </pregunta>
+    <pregunta id="34">
+        <enunciado>
+            ¿Cuál consulta obtiene los empleados que NO están asignados a ningún proyecto (empleados sin asignación)?
+        </enunciado>
+        <opciones>
+            <opcion>
+                a) SELECT empleados.nombre FROM empleados JOIN asignaciones ON empleados.id_empleado =
+                asignaciones.id_empleado WHERE asignaciones.id_empleado IS NULL;
+            </opcion>
+            <opcion>
+                b) SELECT empleados.nombre FROM empleados LEFT JOIN asignaciones ON empleados.id_empleado =
+                asignaciones.id_empleado WHERE asignaciones.id_empleado IS NULL;
+            </opcion>
+            <opcion>
+                c) SELECT empleados.nombre FROM empleados JOIN asignaciones ON empleados.id_empleado =
+                asignaciones.id_empleado;
+            </opcion>
+            <opcion>
+                d) SELECT empleados.nombre FROM empleados RIGHT JOIN asignaciones ON empleados.id_empleado =
+                asignaciones.id_empleado;
+            </opcion>
+        </opciones>
+        <respuesta>
+            b
+        </respuesta>
+        <explicacion>
+            La respuesta correcta es: SELECT empleados.nombre FROM empleados LEFT JOIN asignaciones ON
+            empleados.id_empleado = asignaciones.id_empleado WHERE asignaciones.id_empleado IS NULL;
+        </explicacion>
+    </pregunta>
+    <pregunta id="35">
+        <enunciado>Marca la respuesta correcta</enunciado>
+        <opciones>
+            <opcion>a) Las relaciones pueden tener atributos.</opcion>
+            <opcion>b) Los atributos pertenecen exclusivamente a las entidades.</opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: Las relaciones pueden tener atributos.</explicacion>
+    </pregunta>
+    <pregunta id="36">
+        <enunciado>¿En una BBDD, con qué formato guardarías la fecha de nacimiento de un alumno?</enunciado>
+        <opciones>
+            <opcion>a) dd-mm-aaaa</opcion>
+            <opcion>b) aaaa/mm/dd</opcion>
+            <opcion>c) aaaa-mm-dd</opcion>
+            <opcion>d) dd/mm/aaaa</opcion>
+        </opciones>
+        <respuesta>c</respuesta>
+        <explicacion>La respuesta correcta es: aaaa-mm-dd</explicacion>
+    </pregunta>
+    <pregunta id="37">
+        <enunciado>El dominio es:</enunciado>
+        <opciones>
+            <opcion>a) El conjunto de valores posibles que puede tener un atributo.</opcion>
+            <opcion>b) El conjunto de ocurrencias posibles que puede tener una relación.</opcion>
+            <opcion>c) El conjunto de ocurrencias posibles que puede tener una entidad.</opcion>
+            <opcion>d) Ninguna es correcta.</opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: El conjunto de valores posibles que puede tener un atributo.
+        </explicacion>
+    </pregunta>
+    <pregunta id="38">
+        <enunciado>Marca la respuesta correcta:</enunciado>
+        <opciones>
+            <opcion>a) Para una ocurrencia de una entidad cada ocurrencia sólo puede tomar un valor.</opcion>
+            <opcion>b) Ninguna es correcta.</opcion>
+            <opcion>c) Para una ocurrencia de una entidad cada atributo sólo puede tomar un valor.</opcion>
+            <opcion>d) Para una ocurrencia de un atributo cada atributo sólo puede tomar un valor.</opcion>
+        </opciones>
+        <respuesta>c</respuesta>
+        <explicacion>La respuesta correcta es: Para una ocurrencia de una entidad cada atributo sólo puede tomar un
+            valor.
+        </explicacion>
+    </pregunta>
+    <pregunta id="39">
+        <enunciado>Marca la respuesta correcta:</enunciado>
+        <opciones>
+            <opcion>a) La inconsistencia puede provocar redundancia.</opcion>
+            <opcion>b) La inconsistencia provoca redundancia.</opcion>
+            <opcion>c) La redundancia puede provocar inconsistencia.</opcion>
+            <opcion>d) La redundancia provoca inconsistencia.</opcion>
+        </opciones>
+        <respuesta>c</respuesta>
+        <explicacion>La respuesta correcta es: La redundancia puede provocar inconsistencia.</explicacion>
+    </pregunta>
+    <pregunta id="40">
+        <enunciado>Tenemos la entidad A y la entidad B y existe una relación entre A y B con cardinalidad 1:1. Esto
+            quiere decir:
+        </enunciado>
+        <opciones>
+            <opcion>a) Que una ocurrencia de la entidad B sólo puede estar relacionada con una ocurrencia de la entidad
+                A.
+            </opcion>
+            <opcion>b) Que una ocurrencia de la entidad A sólo puede estar relacionada con una ocurrencia de la entidad
+                B.
+            </opcion>
+            <opcion>c) Que una ocurrencia de la entidad A sólo puede estar relacionada con una ocurrencia de la entidad
+                B y viceversa.
+            </opcion>
+        </opciones>
+        <respuesta>c</respuesta>
+        <explicacion>La respuesta correcta es: Que una ocurrencia de la entidad A sólo puede estar relacionada con una
+            ocurrencia de la entidad B y viceversa.
+        </explicacion>
+    </pregunta>
+    <pregunta id="41">
+        <enunciado>Tenemos una entidad A y una entidad B, y existe una relación entre A y B con cardinalidad N:M. Si la
+            relación tiene un atributo, ¿dónde hay que incluir el atributo de la relación al realizar el paso a tablas?
+        </enunciado>
+        <opciones>
+            <opcion>a) En la tabla A.</opcion>
+            <opcion>b) En la tabla B.</opcion>
+            <opcion>c) Puedo elegir en la tabla A o en la tabla B indistintamente.</opcion>
+            <opcion>d) En la tercera tabla que se genera.</opcion>
+        </opciones>
+        <respuesta>d</respuesta>
+        <explicacion>La respuesta correcta es: En la tercera tabla que se genera.</explicacion>
+    </pregunta>
+    <pregunta id="42">
+        <enunciado>En un diagrama de entidad-relación (DER) debe haber:</enunciado>
+        <opciones>
+            <opcion>a) Entidades, atributos, atributos identificadores principales, relaciones y cardinalidades.
+            </opcion>
+            <opcion>b) Entidades, atributos identificadores principales, relaciones y cardinalidades.</opcion>
+            <opcion>c) Entidades débiles, atributos, atributos identificadores candidatos, relaciones y
+                cardinalidades.
+            </opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: Entidades, atributos, atributos identificadores principales, relaciones y
+            cardinalidades.
+        </explicacion>
+    </pregunta>
+    <pregunta id="43">
+        <enunciado>Si tenemos siete AIC (atributo identificador candidato) y elegimos uno de ellos como AIP (atributo
+            identificador principal) ¿cuántos AIA (atributo identificador alternativo) tendríamos?:
+        </enunciado>
+        <opciones>
+            <opcion>a) Siete.</opcion>
+            <opcion>b) Seis.</opcion>
+            <opcion>c) Ocho.</opcion>
+            <opcion>d) Ninguna es correcta.</opcion>
+        </opciones>
+        <respuesta>b</respuesta>
+        <explicacion>La respuesta correcta es: Seis.</explicacion>
+    </pregunta>
+    <pregunta id="44">
+        <enunciado>Tenemos la entidad A y la entidad B y existe una relación entre A y B con cardinalidad 1:N. Esto
+            quiere decir:
+        </enunciado>
+        <opciones>
+            <opcion>a) Que una ocurrencia de la entidad A puede estar relacionada con varias ocurrencias de la entidad
+                B, mientras que varias ocurrencias de la entidad B sólo pueden estar relacionadas con una ocurrencia de
+                la entidad A.
+            </opcion>
+            <opcion>b) Que una ocurrencia de la entidad A puede estar relacionada con varias ocurrencias de la entidad
+                B, mientras que una ocurrencia de la entidad B puede estar relacionada con varias ocurrencias de la
+                entidad A.
+            </opcion>
+            <opcion>c) Que una ocurrencia de la entidad A puede estar relacionada con varias ocurrencias de la entidad
+                B, mientras que una ocurrencia de la entidad B sólo puede estar relacionada con una ocurrencia de la
+                entidad A.
+            </opcion>
+        </opciones>
+        <respuesta>c</respuesta>
+        <explicacion>La respuesta correcta es: Que una ocurrencia de la entidad A puede estar relacionada con varias
+            ocurrencias de la entidad B, mientras que una ocurrencia de la entidad B sólo puede estar relacionada con
+            una ocurrencia de la entidad A.
+        </explicacion>
+    </pregunta>
+    <pregunta id="45">
+        <enunciado>En relación a los sistemas gestores de bases de datos:</enunciado>
+        <opciones>
+            <opcion>a) Son lo mismo que las bases de datos.</opcion>
+            <opcion>b) Son el componente hardware de las bases de datos.</opcion>
+            <opcion>c) Suponen una interfaz entre las aplicaciones y los datos.</opcion>
+            <opcion>d) Suponen una interfaz entre las aplicaciones y el sistema operativo.</opcion>
+        </opciones>
+        <respuesta>c</respuesta>
+        <explicacion>La respuesta correcta es: Suponen una interfaz entre las aplicaciones y los datos.</explicacion>
+    </pregunta>
+    <pregunta id="46">
+        <enunciado>Los metadatos registran el comportamiento de la información almacenada en:</enunciado>
+        <opciones>
+            <opcion>a) Las tablas del administrador.</opcion>
+            <opcion>b) El diccionario de datos de los usuarios.</opcion>
+            <opcion>c) Los servidores remotos.</opcion>
+            <opcion>d) Las bases de datos.</opcion>
+        </opciones>
+        <respuesta>b</respuesta>
+        <explicacion>La respuesta correcta es: El diccionario de datos de los usuarios.</explicacion>
+    </pregunta>
+    <pregunta id="47">
+        <enunciado>El control de la concurrencia es el mecanismo que:</enunciado>
+        <opciones>
+            <opcion>a) Describe los datos y las relaciones entre ellos.</opcion>
+            <opcion>b) Garantiza el acceso simultáneo a los datos.</opcion>
+            <opcion>c) Gestiona los accesos autorizados y el control de restricciones.</opcion>
+            <opcion>d) Permite consultar y transformar los datos y añadir nuevos.</opcion>
+        </opciones>
+        <respuesta>b</respuesta>
+        <explicacion>La respuesta correcta es: Garantiza el acceso simultáneo a los datos.</explicacion>
+    </pregunta>
+    <pregunta id="48">
+        <enunciado>Algunos comandos SQL para la manipulación de los datos son:</enunciado>
+        <opciones>
+            <opcion>a) DELETE, INSERT y UPDATE.</opcion>
+            <opcion>b) SELECT, ALTER, DROP y CREATE.</opcion>
+            <opcion>c) CREATE, ALTER y DROP.</opcion>
+            <opcion>d) SELECT, DELETE, INSERT, UPDATE y REVOKE.</opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: DELETE, INSERT y UPDATE.</explicacion>
+    </pregunta>
+    <pregunta id="49">
+        <enunciado>En cuanto al ciclo de vida en las bases de datos, el orden de sus fases principales es:</enunciado>
+        <opciones>
+            <opcion>a) Definición, planificación, análisis de requisitos, diseño de la aplicación, diseño de la base de
+                datos, implementación, prueba y mantenimiento.
+            </opcion>
+            <opcion>b) Definición, análisis de requisitos, diseño de la aplicación, diseño de la base de datos,
+                implementación, prototipado, prueba y mantenimiento.
+            </opcion>
+            <opcion>c) Planificación, definición, análisis de requisitos, diseño de la aplicación, diseño de la base de
+                datos, implementación y mantenimiento.
+            </opcion>
+            <opcion>d) Definición, análisis de requisitos, diseño de la base de datos, diseño de la aplicación,
+                prototipado, implementación, prueba y mantenimiento.
+            </opcion>
+        </opciones>
+        <respuesta>d</respuesta>
+        <explicacion>La respuesta correcta es: Definición, análisis de requisitos, diseño de la base de datos, diseño de
+            la aplicación, prototipado, implementación, prueba y mantenimiento.
+        </explicacion>
+    </pregunta>
+    <pregunta id="50">
+        <enunciado>Con respecto al fichero /etc/shadow, ¿cuál de las respuestas no es correcta?</enunciado>
+        <opciones>
+            <opcion>a) Contiene cada una de las contraseñas cifradas, pero pueden estar sin cifrar.</opcion>
+            <opcion>b) Se puede indicar el número de días sin poder cambiar la contraseña.</opcion>
+            <opcion>c) Se puede indicar el número de días antes del vencimiento de la contraseña.</opcion>
+            <opcion>d) Se puede indicar el número de días a partir de los cuales se debe cambiar la contraseña.</opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: Contiene cada una de las contraseñas cifradas, pero pueden estar sin
+            cifrar.
+        </explicacion>
+    </pregunta>
+    <pregunta id="51">
+        <enunciado>En cuanto a los sistemas de soporte a decisiones:</enunciado>
+        <opciones>
+            <opcion>a) No son sistemas de información para su procesamiento, almacenamiento y flujo.</opcion>
+            <opcion>b) Son sistemas de información para su procesamiento y almacenamiento.</opcion>
+            <opcion>c) Son lo mismo que los almacenes de datos o Data Warehouse.</opcion>
+            <opcion>d) No hacen uso de los almacenes de datos o Data Warehouse.</opcion>
+        </opciones>
+        <respuesta>b</respuesta>
+        <explicacion>La respuesta correcta es: Son sistemas de información para su procesamiento y almacenamiento.
+        </explicacion>
+    </pregunta>
+    <pregunta id="52">
+        <enunciado>En relación a los sistemas transaccionales:</enunciado>
+        <opciones>
+            <opcion>a) OLAP es un ejemplo de ellos.</opcion>
+            <opcion>b) Los sistemas DDS son un ejemplo de ellos.</opcion>
+            <opcion>c) También son conocidos como almacenes de datos.</opcion>
+            <opcion>d) OLTP es un ejemplo de ellos.</opcion>
+        </opciones>
+        <respuesta>d</respuesta>
+        <explicacion>La respuesta correcta es: OLTP es un ejemplo de ellos.</explicacion>
+    </pregunta>
+    <pregunta id="53">
+        <enunciado>¿Cuál es el objetivo de la minería de datos?</enunciado>
+        <opciones>
+            <opcion>a) Establecer las estructuras relacionales necesarias para las grandes bases de datos.</opcion>
+            <opcion>b) Cruzar los datos con distintos niveles de agregación en bases de datos multidimensionales.
+            </opcion>
+            <opcion>c) Buscar reglas y estructuras a partir de los datos almacenados en almacenes de datos.</opcion>
+            <opcion>d) Recolectar masivamente los datos y procesarlos en tiempo real.</opcion>
+        </opciones>
+        <respuesta>c</respuesta>
+        <explicacion>La respuesta correcta es: Buscar reglas y estructuras a partir de los datos almacenados en
+            almacenes de datos.
+        </explicacion>
+    </pregunta>
+    <pregunta id="54">
+        <enunciado>La característica más importante de los Big Data es:</enunciado>
+        <opciones>
+            <opcion>a) Supone una colección de almacenes de datos para la búsqueda de patrones.</opcion>
+            <opcion>b) El procesamiento de la información disponible en los grandes almacenes de datos se proyecta en
+                tiempo real.
+            </opcion>
+            <opcion>c) Es la colección de muchas bases de datos relacionales.</opcion>
+            <opcion>d) Es una base de datos NoSQL para el análisis de datos en la toma de decisiones.</opcion>
+        </opciones>
+        <respuesta>b</respuesta>
+        <explicacion>La respuesta correcta es: El procesamiento de la información disponible en los grandes almacenes de
+            datos se proyecta en tiempo real.
+        </explicacion>
+    </pregunta>
+    <pregunta id="55">
+        <enunciado>Si un atributo tiene propiedades que almacenar, este se considera:</enunciado>
+        <opciones>
+            <opcion>a) Atributo multivaluado.</opcion>
+            <opcion>b) Un tipo de interrelación con un atributo.</opcion>
+            <opcion>c) Un tipo de entidad.</opcion>
+            <opcion>d) Un atributo principal.</opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: Atributo multivaluado.</explicacion>
+    </pregunta>
+    <pregunta id="56">
+        <enunciado>En relación a los atributos secundarios:</enunciado>
+        <opciones>
+            <opcion>a) Es lo mismo que un atributo principal.</opcion>
+            <opcion>b) Identifica unívocamente a cada entidad.</opcion>
+            <opcion>c) No identifica unívocamente cada entidad, ya que puede ser opcional.</opcion>
+            <opcion>d) Se usará para relacionar las entidades de dos tipos de entidad.</opcion>
+        </opciones>
+        <respuesta>c</respuesta>
+        <explicacion>La respuesta correcta es: No identifica unívocamente cada entidad, ya que puede ser opcional.
+        </explicacion>
+    </pregunta>
+    <pregunta id="57">
+        <enunciado>Si se desea almacenar la o las tarjetas bancarias que usa un cliente en las compras de un sitio
+            web:
+        </enunciado>
+        <opciones>
+            <opcion>a) Se añadirá el atributo simple tarjeta al tipo de entidad Cliente.</opcion>
+            <opcion>b) Se añadirá el atributo compuesto tarjeta al tipo de entidad Cliente.</opcion>
+            <opcion>c) Se añadirá el atributo principal tarjeta al tipo de entidad Cliente.</opcion>
+            <opcion>d) Se añadirá el atributo multivaluado tarjeta al tipo de entidad Cliente.</opcion>
+        </opciones>
+        <respuesta>d</respuesta>
+        <explicacion>La respuesta correcta es: Se añadirá el atributo multivaluado tarjeta al tipo de entidad Cliente.
+        </explicacion>
+    </pregunta>
+    <pregunta id="58">
+        <enunciado>En las relaciones N:M las cardinalidades de los dos tipos de entidad que unen son:</enunciado>
+        <opciones>
+            <opcion>a) (0,1),(1,1),(1,n) o (2,n).</opcion>
+            <opcion>b) (0,1),(1,1) o (1,n).</opcion>
+            <opcion>c) (0,n),(1,n) o (x,n).</opcion>
+            <opcion>d) (0,n) o (1,n).</opcion>
+        </opciones>
+        <respuesta>c</respuesta>
+        <explicacion>La respuesta correcta es: (0,n),(1,n) o (x,n).</explicacion>
+    </pregunta>
+    <pregunta id="59">
+        <enunciado>En cuanto a las relaciones ternarias:</enunciado>
+        <opciones>
+            <opcion>a) Siempre tienen su representación con dos interrelaciones binarias sin que por ello se pierda
+                semántica.
+            </opcion>
+            <opcion>b) No siempre tienen su representación con dos interrelaciones binarias conservando la semántica.
+            </opcion>
+            <opcion>c) La cardinalidad mínima y máxima en uno de los tipos de entidad son 1 y n, respectivamente.
+            </opcion>
+            <opcion>d) Siempre se deben convertir en un tipo de entidad.</opcion>
+        </opciones>
+        <respuesta>b</respuesta>
+        <explicacion>La respuesta correcta es: No siempre tienen su representación con dos interrelaciones binarias
+            conservando la semántica.
+        </explicacion>
+    </pregunta>
+    <pregunta id="60">
+        <enunciado>Si se quiere cerrar el dominio del atributo color, ¿cuál es la mejor forma?</enunciado>
+        <opciones>
+            <opcion>a) Añadirlo como atributo no nulo.</opcion>
+            <opcion>b) Añadirlo como atributo secundario.</opcion>
+            <opcion>c) Añadirlo como una interrelación con un tipo de entidad llamado Color.</opcion>
+            <opcion>d) Añadirlo como un atributo primario llamado color y un tipo de entidad llamado Color.</opcion>
+        </opciones>
+        <respuesta>c</respuesta>
+        <explicacion>La respuesta correcta es: Añadirlo como una interrelación con un tipo de entidad llamado Color.
+        </explicacion>
+    </pregunta>
+    <pregunta id="61">
+        <enunciado>Los atributos en las interrelaciones:</enunciado>
+        <opciones>
+            <opcion>a) Pueden participar como parte del atributo principal.</opcion>
+            <opcion>b) No se debe añadir a las que son de multiplicidad 1:N.</opcion>
+            <opcion>c) Siempre son temporales y forman parte del identificador de la interrelación.</opcion>
+            <opcion>d) Se añade al tipo de entidad de mayor cardinalidad.</opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: Pueden participar como parte del atributo principal.</explicacion>
+    </pregunta>
+    <pregunta id="62">
+        <enunciado>En las relaciones reflexivas siempre se debe añadir en el otro extremo la cardinalidad mínima y
+            máxima con los valores:
+        </enunciado>
+        <opciones>
+            <opcion>a) (1,1) y (1,n).</opcion>
+            <opcion>b) (0,1) y (1,n).</opcion>
+            <opcion>c) (0,1) y (0,n).</opcion>
+            <opcion>d) (0,1), (1,1), (0,n).</opcion>
+        </opciones>
+        <respuesta>c</respuesta>
+        <explicacion>La respuesta correcta es: (0,1) y (0,n).</explicacion>
+    </pregunta>
+    <pregunta id="63">
+        <enunciado>Los tipos de entidad débiles por identificación, ¿para qué se diseñan?</enunciado>
+        <opciones>
+            <opcion>a) Identificar la entidad regular con el código secuencial de la débil.</opcion>
+            <opcion>b) Identificar la entidad débil con el código secuencial de la regular.</opcion>
+            <opcion>c) Identificar la entidad regular y la entidad débil con un código secuencial.</opcion>
+            <opcion>d) Identificar la entidad débil usando el identificador de la regular de la que depende.</opcion>
+        </opciones>
+        <respuesta>d</respuesta>
+        <explicacion>La respuesta correcta es: Identificar la entidad débil usando el identificador de la regular de la
+            que depende.
+        </explicacion>
+    </pregunta>
+    <pregunta id="64">
+        <enunciado>En las relaciones de generalización total exclusiva:</enunciado>
+        <opciones>
+            <opcion>a) Los subtipos tienen cardinalidad (0,1) y heredan el campo tipo del supertipo.</opcion>
+            <opcion>b) Solo se indican sus propiedades particulares.</opcion>
+            <opcion>c) Los subtipos tienen cardinalidad (1,1) y solo se debe indicar el atributo principal del
+                supertipo.
+            </opcion>
+            <opcion>d) Los subtipos heredan todos los atributos del supertipo y es necesario indicar el atributo
+                principal y sus propiedades particulares.
+            </opcion>
+        </opciones>
+        <respuesta>d</respuesta>
+        <explicacion>La respuesta correcta es: Los subtipos heredan todos los atributos del supertipo y es necesario
+            indicar el atributo principal y sus propiedades particulares.
+        </explicacion>
+    </pregunta>
+    <pregunta id="65">
+        <enunciado>Los atributos principales tienen la restricción:</enunciado>
+        <opciones>
+            <opcion>a) Primary key, Unique, Not Null y Foreign key.</opcion>
+            <opcion>b) Primary key, Not Null y Foreign key.</opcion>
+            <opcion>c) Primary key, Unique y Not Null.</opcion>
+            <opcion>d) Unique, Not Null y Foreign key</opcion>
+        </opciones>
+        <respuesta>c</respuesta>
+        <explicacion>La respuesta correcta es: Primary key, Unique y Not Null.</explicacion>
+    </pregunta>
+    <pregunta id="66">
+        <enunciado>En relación a la restricción de clave ajena F:</enunciado>
+        <opciones>
+            <opcion>a) Apuntan a otras claves ajenas de otras tablas y solo se obtienen de transformar una relación 1:1,
+                1:N o N:M.
+            </opcion>
+            <opcion>b) Apuntan a otras claves primarias de otras tablas y solo se obtienen de transformar una relación
+                N:M.
+            </opcion>
+            <opcion>c) Apuntan a otras claves primarias de otras tablas y solo se obtienen de transformar una relación
+                1:1, 1:N o N:M.
+            </opcion>
+            <opcion>d) Apuntan a otras claves primarias de otras tablas y se obtienen de transformar una relación 1:1,
+                1:N, N:M, interrelación débil y generalizaciones.
+            </opcion>
+        </opciones>
+        <respuesta>d</respuesta>
+        <explicacion>La respuesta correcta es: Apuntan a otras claves primarias de otras tablas y se obtienen de
+            transformar una relación 1:1, 1:N, N:M, interrelación débil y generalizaciones.
+        </explicacion>
+    </pregunta>
+    <pregunta id="67">
+        <enunciado>Las relaciones 1:1 con cardinalidades (0,1) y (1,1) en los extremos se transforman del modo:
+        </enunciado>
+        <opciones>
+            <opcion>a) Se añade la clave primaria de la que tenga cardinalidades (0,1) a la de (1,1) como clave
+                primaria.
+            </opcion>
+            <opcion>b) Se añade la clave primaria de la que tenga cardinalidades (0,1) a la de (1,1) como clave ajena.
+            </opcion>
+            <opcion>c) Se añade la clave primaria de la que tenga cardinalidades (1,1) a la de (0,1) como clave
+                primaria.
+            </opcion>
+            <opcion>d) Se añade la clave primaria de la que tenga cardinalidades (1,1) a la de (0,1) como clave ajena.
+            </opcion>
+        </opciones>
+        <respuesta>d</respuesta>
+        <explicacion>La respuesta correcta es: Se añade la clave primaria de la que tenga cardinalidades (1,1) a la de
+            (0,1) como clave ajena.
+        </explicacion>
+    </pregunta>
+    <pregunta id="68">
+        <enunciado>En las relaciones 1:N con cardinalidades (1,1) y (0,n) en los extremos:</enunciado>
+        <opciones>
+            <opcion>a) Se añade la clave primaria de la que tenga cardinalidades (1,1) a la de (0,n) como clave ajena
+                puesta a nulos.
+            </opcion>
+            <opcion>b) Se añade la clave primaria de la que tenga cardinalidades (0,n) a la de (1,1) como clave ajena
+                puesta a no nulos.
+            </opcion>
+            <opcion>c) Se añade la clave primaria de la que tenga cardinalidades (1,1) a la de (0,n) como clave ajena
+                puesta a no nulos.
+            </opcion>
+            <opcion>d) Se añade la clave primaria de la que tenga cardinalidades (1,1) a la de (0,n) como clave primaria
+                puesta a nulos.
+            </opcion>
+        </opciones>
+        <respuesta>c</respuesta>
+        <explicacion>La respuesta correcta es: Se añade la clave primaria de la que tenga cardinalidades (1,1) a la de
+            (0,n) como clave ajena puesta a no nulos.
+        </explicacion>
+    </pregunta>
+    <pregunta id="69">
+        <enunciado>En las relaciones N:M con cardinalidades (1,n) en ambos extremos:</enunciado>
+        <opciones>
+            <opcion>a) Se añade la clave primaria como clave primaria y ajena de una de ellas a la otra.</opcion>
+            <opcion>b) Se crea una nueva relación con una clave primaria compuesta por el atributo principal del tipo de
+                entidad que se elija y como clave ajena que apunta al otro tipo de entidad.
+            </opcion>
+            <opcion>c) Se crea una nueva relación con clave primaria los dos atributos principales de los tipos de
+                entidad que unen y cada uno como clave ajena.
+            </opcion>
+            <opcion>d) Se crea una relación con clave primaria los dos atributos principales y con una clave ajena que
+                apunta a ambos.
+            </opcion>
+        </opciones>
+        <respuesta>c</respuesta>
+        <explicacion>La respuesta correcta es: Se crea una nueva relación con clave primaria los dos atributos
+            principales de los tipos de entidad que unen y cada uno como clave ajena.
+        </explicacion>
+    </pregunta>
+    <pregunta id="70">
+        <enunciado>En las interrelaciones N:M con atributos no puestos a P:</enunciado>
+        <opciones>
+            <opcion>a) Se crea una nueva relación, donde su clave primaria se forma con los atributos principales de los
+                tipos de entidad que unen, y se añade una clave ajena con los atributos no puesto a P.
+            </opcion>
+            <opcion>b) Los atributos que no son principales se propagan a uno de los dos tipos de entidad y se crea una
+                nueva relación con los atributos principales que son principales y ajenos.
+            </opcion>
+            <opcion>c) Los atributos principales de los dos tipos de entidad más los atributos de la relación forman los
+                atributos principales de la nueva relación.
+            </opcion>
+            <opcion>d) Se crea una relación con clave primaria formada por los atributos principales de los dos tipos de
+                entidad y se añaden los atributos no principales como atributos normales.
+            </opcion>
+        </opciones>
+        <respuesta>d</respuesta>
+        <explicacion>La respuesta correcta es: Se crea una relación con clave primaria formada por los atributos
+            principales de los dos tipos de entidad y se añaden los atributos no principales como atributos normales.
+        </explicacion>
+    </pregunta>
+    <pregunta id="71">
+        <enunciado>En las interrelaciones N:M con atributos principales:</enunciado>
+        <opciones>
+            <opcion>a) Se crea una nueva relación con clave primaria, la formada por los dos atributos principales de
+                los tipos de entidad que unen, y con clave ajena, la formada por los atributos no principales.
+            </opcion>
+            <opcion>b) Se propaga los atributos no principales a uno de los dos tipos de entidad y se crea una nueva
+                relación con los atributos principales que son claves ajenas.
+            </opcion>
+            <opcion>c) Se crea una relación con los atributos principales, los de los tipos de entidad que une, y los
+                atributos principales de la interrelación.
+            </opcion>
+            <opcion>d) Se crea una relación donde la clave primaria está compuesta por los atributos principales de los
+                tipos de entidad que une y se añaden los atributos principales como atributos normales.
+            </opcion>
+        </opciones>
+        <respuesta>d</respuesta>
+        <explicacion>La respuesta correcta es: Se crea una relación donde la clave primaria está compuesta por los
+            atributos principales de los tipos de entidad que une y se añaden los atributos principales como atributos
+            normales.
+        </explicacion>
+    </pregunta>
+    <pregunta id="72">
+        <enunciado>Una interrelación reflexiva 1:N se transforma:</enunciado>
+        <opciones>
+            <opcion>a) Añadiendo el atributo principal de la relación como clave ajena que permite valores nulos.
+            </opcion>
+            <opcion>b) Añadiendo el atributo principal de la relación como clave ajena que no permite valores nulos.
+            </opcion>
+            <opcion>c) Creando una nueva relación con atributo principal y clave ajena que apunta a la relación
+                original.
+            </opcion>
+            <opcion>d) Creando una nueva relación con atributo principal, el de la relación original.</opcion>
+        </opciones>
+        <respuesta>b</respuesta>
+        <explicacion>La respuesta correcta es: Añadiendo el atributo principal de la relación como clave ajena que no
+            permite valores nulos.
+        </explicacion>
+    </pregunta>
+    <pregunta id="73">
+        <enunciado>Un subtipo de un tipo de entidad supertipo se transforma:</enunciado>
+        <opciones>
+            <opcion>a) Transformándolo como relación con clave primaria la del supertipo y añadiendo el discriminador
+                del supertipo como clave ajena que apunta a él.
+            </opcion>
+            <opcion>b) Transformándolo como relación con clave primaria y clave ajena, la del supertipo, y añadiendo el
+                discriminador del supertipo.
+            </opcion>
+            <opcion>c) Transformándolo como relación con clave primaria y clave ajena, la del supertipo, y apuntando al
+                subtipo.
+            </opcion>
+            <opcion>d) Transformándolo como relación con clave primaria y clave ajena, la del supertipo, y apuntando al
+                supertipo.
+            </opcion>
+        </opciones>
+        <respuesta>d</respuesta>
+        <explicacion>La respuesta correcta es: Transformándolo como relación con clave primaria y clave ajena, la del
+            supertipo, y apuntando al supertipo.
+        </explicacion>
+    </pregunta>
+    <pregunta id="74">
+        <enunciado>Con respecto a la normalización:</enunciado>
+        <opciones>
+            <opcion>a) Una tabla está en primera forma normal cuando sus atributos contienen valores atómicos.</opcion>
+            <opcion>b) Una tabla está en segunda forma normal cuando todos los atributos que forman parte de la clave
+                primaria tienen dependencias completas con respecto a todas las claves existentes en el esquema.
+            </opcion>
+            <opcion>c) Una tabla está en tercera forma normal si cada atributo que participa en la clave primaria no
+                depende transitivamente de esta.
+            </opcion>
+            <opcion>d) Una tabla está en segunda forma normal cuando todos los atributos que no forman parte de la clave
+                primaria no tienen dependencias completas con respecto a todas las claves existentes en el esquema.
+            </opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: Una tabla está en primera forma normal cuando sus atributos contienen
+            valores atómicos.
+        </explicacion>
+    </pregunta>
+    <pregunta id="75">
+        <enunciado>Para crear la tabla Departamento(P·CodDept, Nombre) en el espacio de tabla datos, se ejecutará:
+        </enunciado>
+        <opciones>
+            <opcion>a) CREATE TABLE Departamento(CodDept NUMBER(2) PRIMARY KEY, Nombre VARCHAR2(20) NOT NULL) TABLESPACE
+                Datos;
+            </opcion>
+            <opcion>b) CREATE TABLE Departamento(CodDept NUMBER(2) PRIMARY KEY, Nombre VARCHAR2(20) NOT NULL TABLESPACE
+                Datos);
+            </opcion>
+            <opcion>c) CREATE TABLE Departamento(CodDept NUMBER(2) PRIMARY KEY, Nombre VARCHAR2(20) NOT NULL, TABLESPACE
+                Datos);
+            </opcion>
+            <opcion>d) CREATE TABLE Departamento(CodDept NUMBER(2) PRIMARY KEY, Nombre VARCHAR2(20) NOT NULL) Datos;
+            </opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: CREATE TABLE Departamento(CodDept NUMBER(2) PRIMARY KEY, Nombre
+            VARCHAR2(20) NOT NULL) TABLESPACE Datos;
+        </explicacion>
+    </pregunta>
+    <pregunta id="76">
+        <enunciado>Para definir una restricción de clave primaria con nombre pk_prof en la definición de la columna
+            CodProf NUMBER(4) se escribe:
+        </enunciado>
+        <opciones>
+            <opcion>a) CodProf NUMBER(4) pk_prof PRIMARY KEY</opcion>
+            <opcion>b) CodProf NUMBER(4) CONSTRAINT pk_prof PRIMARY KEY</opcion>
+            <opcion>c) CodProf NUMBER(4) CONSTRAINT PRIMARY KEY(pk_prof)</opcion>
+            <opcion>d) CodProf NUMBER(4) PRIMARY KEY(pk_prof)</opcion>
+        </opciones>
+        <respuesta>b</respuesta>
+        <explicacion>La respuesta correcta es: CodProf NUMBER(4) CONSTRAINT pk_prof PRIMARY KEY</explicacion>
+    </pregunta>
+    <pregunta id="77">
+        <enunciado>Para definir la restricción de clave primaria de una tabla con nombre pk_hab que tiene dos columnas
+            CodHotel y secuencia como campo clave, se escribe:
+        </enunciado>
+        <opciones>
+            <opcion>a) CONSTRAINT pk_hab PRIMARY KEY(CodHotel), PRIMARY KEY(secuencia)</opcion>
+            <opcion>b) CONSTRAINT PRIMARY KEY(pk_hab), PRIMARY KEY(CodHotel, secuencia)</opcion>
+            <opcion>c) PRIMARY KEY(pk_hab), PRIMARY KEY(CodHotel, secuencia)</opcion>
+            <opcion>d) CONSTRAINT pk_hab PRIMARY KEY(CodHotel, secuencia)</opcion>
+        </opciones>
+        <respuesta>d</respuesta>
+        <explicacion>La respuesta correcta es: CONSTRAINT pk_hab PRIMARY KEY(CodHotel, secuencia)</explicacion>
+    </pregunta>
+    <pregunta id="78">
+        <enunciado>Para definir una restricción de clave foránea llamada fk_prof_dep hacia la columna CodDept de la
+            tabla Departamento con borrado puesto a nulos, se escribe:
+        </enunciado>
+        <opciones>
+            <opcion>a) CONSTRAINT fk_prof_dep FOREIGN KEY(CodDept) REFERENCES Departamento (CodDepT) ON DELETE SET
+                NULL
+            </opcion>
+            <opcion>b) FOREIGN KEY(fk_prof_dep) REFERERENCES Departamento(CodDepT) ON DELETE SET NULL</opcion>
+            <opcion>c) CONSTRAINT fk_prof_dep FOREIGN KEY(CodDept) REFERENCE Departamento DELETE SET NULL</opcion>
+            <opcion>d) CONSTRAINT FOREIGN KEY(CodDept) REFERENCES Departamento(fk_prof_dep) DELETE SET NUL</opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: CONSTRAINT fk_prof_dep FOREIGN KEY(CodDept) REFERENCES Departamento
+            (CodDepT) ON DELETE SET NULL
+        </explicacion>
+    </pregunta>
+    <pregunta id="79">
+        <enunciado>Para añadir una columna planta NUMBER(2) a la tabla Departamento y su validación para que esté entre
+            1 y 23, se debe ejecutar:
+        </enunciado>
+        <opciones>
+            <opcion>a) ALTER TABLE Departamento ADD Planta NUMBER(2) CHECK(Planta BETWEEN 1 AND 23);</opcion>
+            <opcion>b) UPDATE Departamento SET Planta NUMBER(2) CHECK(Planta>=1 AND&gt;=23);
+            </opcion>
+            <opcion>c) ALTER TABLE Departamento ADD Planta NUMBER(2) CHECK(Planta>=1 AND&gt;=23);
+            </opcion>
+            <opcion>d) UPDATE Departamento ADD Planta NUMBER(2) CHECK(Planta BETWEEN 1 AND 23);</opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: ALTER TABLE Departamento ADD Planta NUMBER(2) CHECK(Planta BETWEEN 1 AND
+            23);
+        </explicacion>
+    </pregunta>
+    <pregunta id="80">
+        <enunciado>Para eliminar la tabla Departamento y las restricciones asociadas a estas se ejecuta:</enunciado>
+        <opciones>
+            <opcion>a) DELETE TABLE Departamento CONSTRAINT;</opcion>
+            <opcion>b) DROP Departamento CONSTRAINT;</opcion>
+            <opcion>c) DROP TABLE Departamento CASCADE CONSTRAINTS;</opcion>
+            <opcion>d) DROP TABLE Departamento ON DELETE CASCADE CONSTRAINTS;</opcion>
+        </opciones>
+        <respuesta>c</respuesta>
+        <explicacion>La respuesta correcta es: DROP TABLE Departamento CASCADE CONSTRAINTS;</explicacion>
+    </pregunta>
+    <pregunta id="81">
+        <enunciado>Para insertar un registro en la tabla Departamento(P·CodDept, Nombre, N·Planta), se debe ejecutar:
+        </enunciado>
+        <opciones>
+            <opcion>a) INSERT Departamento(CodDep,Nombre) VALUES (1,'Informática');</opcion>
+            <opcion>b) INSERT Departamento VALUES (1,'Informática');</opcion>
+            <opcion>c) INSERT INTO Departamento(CodDep,Nombre) VALUES (1,'Informática');</opcion>
+            <opcion>d) INSERT Departamento VALUES (1,'Informática',NULL);</opcion>
+        </opciones>
+        <respuesta>c</respuesta>
+        <explicacion>La respuesta correcta es: INSERT INTO Departamento(CodDep,Nombre) VALUES (1,'Informática');
+        </explicacion>
+    </pregunta>
+    <pregunta id="82">
+        <enunciado>Para cambiar el segundo apellido en la tabla Empleado(P·dni, Nombre, prApellido, N·sgApellido), se
+            ejecutará:
+        </enunciado>
+        <opciones>
+            <opcion>a) ALTER Empleado sgApellido='Palacios' WHERE dni=34567891;</opcion>
+            <opcion>b) ALTER Empleado SET sgApellido='Palacios' WHERE dni=34567891;</opcion>
+            <opcion>c) ALTER TABLE Empleado SET sgApellido='Palacios' WHERE dni=34567891;</opcion>
+            <opcion>d) UPDATE Empleado SET sgApellido='Palacios' WHERE dni=34567891;</opcion>
+        </opciones>
+        <respuesta>d</respuesta>
+        <explicacion>La respuesta correcta es: UPDATE Empleado SET sgApellido='Palacios' WHERE dni=34567891;
+        </explicacion>
+    </pregunta>
+    <pregunta id="83">
+        <enunciado>¿Cuál de las siguientes cláusula STORAGE está bien escrita?</enunciado>
+        <opciones>
+            <opcion>a) STORAGE(INIT 10M NEXT 15M NEXT 30)</opcion>
+            <opcion>b) STORAGE(INITIAL 10M NEXT 15M PCTINCREASE 30)</opcion>
+            <opcion>c) STORAGE(10M, 15M,30)</opcion>
+            <opcion>d) STORAGE(INIT 10M NEXT 15M PCTINCREASE 30)</opcion>
+        </opciones>
+        <respuesta>b</respuesta>
+        <explicacion>La respuesta correcta es: STORAGE(INITIAL 10M NEXT 15M PCTINCREASE 30)</explicacion>
+    </pregunta>
+    <pregunta id="84">
+        <enunciado>Para declarar un número de 7 cifras enteras y 4 decimales usando el tipo de datos NUMBER, la
+            declaración será:
+        </enunciado>
+        <opciones>
+            <opcion>a) NUMBER(4,7)</opcion>
+            <opcion>b) NUMBER(7,4)</opcion>
+            <opcion>c) NUMBER(3,11)</opcion>
+            <opcion>d) NUMBER(11,3)</opcion>
+        </opciones>
+        <respuesta>b</respuesta>
+        <explicacion>La respuesta correcta es: NUMBER(7,4)</explicacion>
+    </pregunta>
+    <pregunta id="85">
+        <enunciado>Marca la respuesta correcta:</enunciado>
+        <opciones>
+            <opcion>a) La sentencia CREATE TABLE pertenece al DDL (Lenguaje de DEFINICIÓN de Datos).</opcion>
+            <opcion>b) Ninguna es correcta.</opcion>
+            <opcion>c) La sentencia CREATE TABLE no pertenece al DDL ni al DML.</opcion>
+            <opcion>d) La sentencia CREATE TABLE pertenece al DML (Lenguaje de MANIPULACIÓN de Datos).</opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: La sentencia CREATE TABLE pertenece al DDL (Lenguaje de DEFINICIÓN de
+            Datos).
+        </explicacion>
+    </pregunta>
+    <pregunta id="86">
+        <enunciado>Marca la respuesta correcta:</enunciado>
+        <opciones>
+            <opcion>a) Ninguna es correcta.</opcion>
+            <opcion>b) La sentencia CREATE no pertenece al DDL ni al DML.</opcion>
+            <opcion>c) La sentencia CREATE pertenece al DML (Lenguaje de MANIPULACIÓN de Datos).</opcion>
+            <opcion>d) La sentencia CREATE pertenece al DDL (Lenguaje de DEFINICIÓN de Datos).</opcion>
+        </opciones>
+        <respuesta>d</respuesta>
+        <explicacion>La respuesta correcta es: La sentencia CREATE pertenece al DDL (Lenguaje de DEFINICIÓN de Datos).
+        </explicacion>
+    </pregunta>
+    <pregunta id="87">
+        <enunciado>Marca la respuesta correcta:</enunciado>
+        <opciones>
+            <opcion>a) Ninguna es correcta.</opcion>
+            <opcion>b) La sentencia CREATE DATABASE pertenece al DDL (Lenguaje de DEFINICIÓN de Datos).</opcion>
+            <opcion>c) La sentencia CREATE DATABASE pertenece al DML (Lenguaje de MANIPULACIÓN de Datos).</opcion>
+            <opcion>d) La sentencia CREATE DATABASE no pertenece al DDL ni al DML.</opcion>
+        </opciones>
+        <respuesta>b</respuesta>
+        <explicacion>La respuesta correcta es: La sentencia CREATE DATABASE pertenece al DDL (Lenguaje de DEFINICIÓN de
+            Datos).
+        </explicacion>
+    </pregunta>
+    <pregunta id="88">
+        <enunciado>Marca la respuesta correcta:</enunciado>
+        <opciones>
+            <opcion>a) La sentencia UPDATE no pertenece al DDL ni al DML.</opcion>
+            <opcion>b) Ninguna es correcta.</opcion>
+            <opcion>c) La sentencia UPDATE pertenece al DML (Lenguaje de MANIPULACIÓN de Datos).</opcion>
+            <opcion>d) La sentencia UPDATE pertenece al DDL (Lenguaje de DEFINICIÓN de Datos).</opcion>
+        </opciones>
+        <respuesta>c</respuesta>
+        <explicacion>La respuesta correcta es: La sentencia UPDATE pertenece al DML (Lenguaje de MANIPULACIÓN de
+            Datos).
+        </explicacion>
+    </pregunta>
+    <pregunta id="89">
+        <enunciado>Marca la respuesta correcta:</enunciado>
+        <opciones>
+            <opcion>a) La sentencia DELETE pertenece al DDL (Lenguaje de DEFINICIÓN de Datos).</opcion>
+            <opcion>b) La sentencia DELETE pertenece al DML (Lenguaje de MANIPULACIÓN de Datos).</opcion>
+            <opcion>c) La sentencia DELETE no pertenece al DDL ni al DML.</opcion>
+            <opcion>d) Ninguna es correcta.</opcion>
+        </opciones>
+        <respuesta>b</respuesta>
+        <explicacion>La respuesta correcta es: La sentencia DELETE pertenece al DML (Lenguaje de MANIPULACIÓN de
+            Datos).
+        </explicacion>
+    </pregunta>
+    <pregunta id="90">
+        <enunciado>Queremos eliminar la columna sueldo de la tabla empleados. ¿Qué query sería la correcta?</enunciado>
+        <opciones>
+            <opcion>a) ALTER TABLE empleados DELETE sueldo;</opcion>
+            <opcion>b) DROP COLUMN sueldo FROM empleados;</opcion>
+            <opcion>c) ALTER TABLE empleados DROP sueldo;</opcion>
+            <opcion>d) Ninguna de las anteriores.</opcion>
+        </opciones>
+        <respuesta>c</respuesta>
+        <explicacion>La respuesta correcta es: ALTER TABLE empleados DROP sueldo;</explicacion>
+    </pregunta>
+    <pregunta id="91">
+        <enunciado>Marca la respuesta correcta:</enunciado>
+        <opciones>
+            <opcion>a) La sentencia INSERT pertenece al DML (Lenguaje de MANIPULACIÓN de Datos).</opcion>
+            <opcion>b) La sentencia INSERT pertenece al DDL (Lenguaje de DEFINICIÓN de Datos).</opcion>
+            <opcion>c) La sentencia INSERT no pertenece al DDL ni al DML.</opcion>
+            <opcion>d) Ninguna es correcta.</opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: La sentencia INSERT pertenece al DML (Lenguaje de MANIPULACIÓN de
+            Datos).
+        </explicacion>
+    </pregunta>
+    <pregunta id="92">
+        <enunciado>Si tenemos creada la tabla empleados y ya tenemos 10 filas con información insertada en la misma, al
+            ejecutar la query ALTER TABLE empleados ADD COLUMN sueldo FLOAT(7,2) UNSIGNED NOT NULL AFTER apellidos;
+        </enunciado>
+        <opciones>
+            <opcion>a) La información del campo sueldo en todas las filas será 0.00</opcion>
+            <opcion>b) La información del campo sueldo en todas las filas será NULL.</opcion>
+            <opcion>c) La información del campo sueldo en todas las filas estará vacía.</opcion>
+            <opcion>d) Ninguna es correcta.</opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: La información del campo sueldo en todas las filas será 0.00
+        </explicacion>
+    </pregunta>
+    <pregunta id="93">
+        <enunciado>Si queremos eliminar las columnas observaciones y departamento de la tabla empleados, debemos
+            ejecutar la siguiente query:
+        </enunciado>
+        <opciones>
+            <opcion>a) ALTER TABLE empleados DROP observaciones, DROP departamento;</opcion>
+            <opcion>b) ALTER TABLE empleados DROP observaciones, departamento;</opcion>
+            <opcion>c) ALTER TABLE empleados DROP observaciones AND departamento;</opcion>
+            <opcion>d) Ninguna es correcta.</opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: ALTER TABLE empleados DROP observaciones, DROP departamento;
+        </explicacion>
+    </pregunta>
+    <pregunta id="94">
+        <enunciado>Marca la respuesta correcta:</enunciado>
+        <opciones>
+            <opcion>a) La sentencia ALTER TABLE pertenece al DDL (Lenguaje de DEFINICIÓN de Datos).</opcion>
+            <opcion>b) La sentencia ALTER TABLE no pertenece al DDL ni al DML.</opcion>
+            <opcion>c) La sentencia ALTER TABLE pertenece al DML (Lenguaje de MANIPULACIÓN de Datos).</opcion>
+            <opcion>d) Ninguna es correcta.</opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: La sentencia ALTER TABLE pertenece al DDL (Lenguaje de DEFINICIÓN de
+            Datos).
+        </explicacion>
+    </pregunta>
+    <pregunta id="95">
+        <enunciado>La consulta Mostrar el dni sin repetir de los profesores que imparten la asignatura con código clave
+            3...
+        </enunciado>
+        <opciones>
+            <opcion>a) SELECT dni FROM Profesor WHERE CodAsig=3;</opcion>
+            <opcion>b) SELECT DISTINTC dni FROM Profesor WHERE CodAsig=3;</opcion>
+            <opcion>c) SELECT dni FROM Imparte WHERE CodAsig=3;</opcion>
+            <opcion>d) SELECT DISTINTC dni FROM Imparte WHERE CodAsig=3;</opcion>
+        </opciones>
+        <respuesta>d</respuesta>
+        <explicacion>La respuesta correcta es: SELECT DISTINTC dni FROM Imparte WHERE CodAsig=3;</explicacion>
+    </pregunta>
+    <pregunta id="96">
+        <enunciado>Usando el producto cartesiano para implementar la consulta Mostrar el código de las asignaturas
+            impartidas por profesores del departamento con código 4...
+        </enunciado>
+        <opciones>
+            <opcion>a) SELECT CodAsig FROM Asignatura A, Imparte I, Profesor P WHERE A.CodAsig=I. CodAsig AND
+                I.dni=P.dni AND CodDep=4;
+            </opcion>
+            <opcion>b) SELECT CodAsig FROM Asignatura A, Imparte I, Profesor P, Departamento WHERE A.CodAsig=I.CodAsig
+                AND I.dni=P.dni AND CodDep=4;
+            </opcion>
+            <opcion>c) SELECT CodAsig FROM Asignatura A, Imparte I WHERE A.CodAsig=I.CodAsig AND CodDep=4;</opcion>
+            <opcion>d) SELECT CodAsig FROM Asignatura A, Imparte I, Profesor P WHERE CodDep=4;</opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: SELECT CodAsig FROM Asignatura A, Imparte I, Profesor P WHERE
+            A.CodAsig=I. CodAsig AND I.dni=P.dni AND CodDep=4;
+        </explicacion>
+    </pregunta>
+    <pregunta id="97">
+        <enunciado>Usando el predicado JOIN ON, para implementar la consulta Mostrar el código de las asignaturas
+            impartidas por profesores del departamento con código 4...
+        </enunciado>
+        <opciones>
+            <opcion>a) SELECT CodAsig FROM Asignatura A JOIN Imparte I ON A.CodAsig=I.CodAsig JOIN Profesor P ON
+                I.dni=P.dni WHERE A.CodAsig=I.CodAsig AND I.dni=P.dni AND CodDep=4;
+            </opcion>
+            <opcion>b) SELECT CodAsig FROM Asignatura A JOIN Imparte I ON A.CodAsig=I.CodAsig JOIN Profesor P ON
+                I.dni=P.dni WHERE CodDep=4;
+            </opcion>
+            <opcion>c) SELECT CodAsig FROM Asignatura A JOIN Imparte I ON A.CodAsig=I.CodAsig JOIN Profesor P ON
+                I.dni=P.dni JOIN Departamento WHERE CodDep=4;
+            </opcion>
+            <opcion>d) SELECT CodAsig FROM Asignatura A JOIN Imparte I ON CodAsig JOIN Profesor P ON dni WHERE
+                CodDep=4;
+            </opcion>
+        </opciones>
+        <respuesta>b</respuesta>
+        <explicacion>La respuesta correcta es: SELECT CodAsig FROM Asignatura A JOIN Imparte I ON A.CodAsig=I.CodAsig
+            JOIN Profesor P ON I.dni=P.dni WHERE CodDep=4;
+        </explicacion>
+    </pregunta>
+    <pregunta id="98">
+        <enunciado>Para filtrar en la cláusula WHERE aquellos nombres que empiecen por A se debe escribir:</enunciado>
+        <opciones>
+            <opcion>a) WHERE Nombre LIKE A%</opcion>
+            <opcion>b) WHERE Nombre LIKE "A%"</opcion>
+            <opcion>c) WHERE Nombre='A%'</opcion>
+            <opcion>d) WHERE Nombre LIKE 'A%'</opcion>
+        </opciones>
+        <respuesta>d</respuesta>
+        <explicacion>La respuesta correcta es: WHERE Nombre LIKE 'A%'</explicacion>
+    </pregunta>
+    <pregunta id="99">
+        <enunciado>Para filtrar en el WHERE aquellos nombres cuya primera letra sea N, P, L, Q, M, S, T, A o B usando la
+            función SUBSTR, se ha de escribir:
+        </enunciado>
+        <opciones>
+            <opcion>a) WHERE SUBSTR(Nombre,1,1) IN ('N','P','L','Q','M','S','T','A','B')</opcion>
+            <opcion>b) WHERE SUBSTR(Nombre) IN ('N','P','L','Q','M','S','T','A','B')</opcion>
+            <opcion>c) WHERE SUBSTR(Nombre,1,1)=('N','P','L','Q','M','S','T','A','B')</opcion>
+            <opcion>d) WHERE SUBSTR(Nombre,1) IN ('N','P','L','Q','M','S','T','A','B')</opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: WHERE SUBSTR(Nombre,1,1) IN ('N','P','L','Q','M','S','T','A','B')
+        </explicacion>
+    </pregunta>
+    <pregunta id="100">
+        <enunciado>Usando la función LENGTH y para la columna ISBN NUMBER(13), la expresión que hay que usar en el WHERE
+            para comprobar que su longitud sea de 13 dígitos será:
+        </enunciado>
+        <opciones>
+            <opcion>a) WHERE LENGTH(TO_CHAR ISBN ) BETWEEN 13 AND 13</opcion>
+            <opcion>b) WHERE LENGTH(TO_CHAR(ISBN))=13</opcion>
+            <opcion>c) WHERE LENGTH( (ISBN)) LIKE '13'</opcion>
+            <opcion>d) WHERE LENGTH TO_CHAR(ISBN)=13</opcion>
+        </opciones>
+        <respuesta>b</respuesta>
+        <explicacion>La respuesta correcta es: WHERE LENGTH(TO_CHAR(ISBN))=13</explicacion>
+    </pregunta>
+    <pregunta id="101">
+        <enunciado>¿Cuál sería la consulta para mostrar el número de empleados que trabajan en el departamento de
+            Contabilidad, Informática o Ventas?
+        </enunciado>
+        <opciones>
+            <opcion>a) SELECT COUNT(dni) FROM Empleado E JOIN Departamento D USING E.CodDep=D. CodDep WHERE D.Nombre IN
+                ('Contabilidad','Informática','Ventas');
+            </opcion>
+            <opcion>b) SELECT SUM(CodAsig) FROM Empleado E, Departamento D WHERE E.CodDep=D. CodDep AND D.Nombre IN
+                ('Contabilidad','Informática','Ventas');
+            </opcion>
+            <opcion>c) SELECT COUNT(CodDep) FROM Empleado E, Departamento D WHERE E.CodDep=D.CodDep AND D.Nombre IN
+                ('Contabilidad','Informática','Ventas');
+            </opcion>
+            <opcion>d) SELECT COUNT(*) FROM Empleado WHERE CodDep IN(SELECT CodDep FROM Departamento WHERE Nombre IN
+                ('Contabilidad','Informática','Ventas');
+            </opcion>
+        </opciones>
+        <respuesta>d</respuesta>
+        <explicacion>La respuesta correcta es: SELECT COUNT(*) FROM Empleado WHERE CodDep IN(SELECT CodDep FROM
+            Departamento WHERE Nombre IN ('Contabilidad','Informática','Ventas');
+        </explicacion>
+    </pregunta>
+    <pregunta id="102">
+        <enunciado>La consulta Mostrar el número de empleados por cada departamento será:</enunciado>
+        <opciones>
+            <opcion>a) SELECT COUNT(dni) FROM Empleado GROUP BY CodDep;</opcion>
+            <opcion>b) SELECT COUNT(dni), nombre FROM Empleado GROUP BY CodDep;</opcion>
+            <opcion>c) SELECT COUNT(*) FROM Empleado E1, Empleado E2 WHERE E1.CodDep=E2. CodDep GROUP BY CodDep;
+            </opcion>
+            <opcion>d) SELECT COUNT(CodDep) FROM Empleado GROUP BY dni;</opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: SELECT COUNT(dni) FROM Empleado GROUP BY CodDep;</explicacion>
+    </pregunta>
+    <pregunta id="103">
+        <enunciado>¿Qué subconsulta corresponde a la consulta SELECT COUNT(CodDep) FROM Empleado E, Departamento D WHERE
+            E.CodDep=D.CodDep AND D.Nombre IN ('Contabilidad', 'Informática', 'Ventas')?
+        </enunciado>
+        <opciones>
+            <opcion>a) SELECT COUNT(CodDep) FROM Empleado, Departamento D WHERE CodDep IN(SELECT CodDep FROM
+                Departamento) WHERE D.Nombre IN ('Contabilidad', 'Informática', 'Ventas');
+            </opcion>
+            <opcion>b) SELECT COUNT(CodDep) FROM Empleado WHERE CodDep IN(SELECT CodDep FROM Departamento D WHERE
+                D.Nombre IN (SELECT Nombre FROM Departamento WHERE Nombre IN('Contabilidad', 'Informática', 'Ventas')));
+            </opcion>
+            <opcion>c) SELECT COUNT(CodDep) FROM Empleado WHERE CodDep IN(SELECT CodDep FROM Departamento D WHERE
+                D.Nombre IN (SELECT Nombre FROM Departamento WHERE Nombre IN('Contabilidad', 'Informática', 'Ventas')));
+            </opcion>
+            <opcion>d) SELECT COUNT(*) FROM Departamento WHERE dni IN(SELECT dni FROM Empleado WHERE Nombre IN
+                ('Contabilidad', 'Informática', 'Ventas'));
+            </opcion>
+        </opciones>
+        <respuesta>c</respuesta>
+        <explicacion>La respuesta correcta es: SELECT COUNT(CodDep) FROM Empleado WHERE CodDep IN(SELECT CodDep FROM
+            Departamento D WHERE D.Nombre IN (SELECT Nombre FROM Departamento WHERE Nombre IN('Contabilidad',
+            'Informática', 'Ventas')));
+        </explicacion>
+    </pregunta>
+    <pregunta id="104">
+        <enunciado>Si queremos insertar en la tabla Emp(P·dni) los empleados de la tabla Empleado(P·dni, Nombre,
+            N·prApellido) que no tienen primer apellido, el resultado será:
+        </enunciado>
+        <opciones>
+            <opcion>a) INSERT INTO Emp VALUES SELECT dni FROM Empleado WHERE prApellido=NULL;</opcion>
+            <opcion>b) INSERT INTO Emp(dni) SELECT dni FROM Empleado WHERE prApellido IS NULL;</opcion>
+            <opcion>c) INSERT INTO Emp(dni) VALUES(SELECT dni FROM Empleado WHERE prApellido IS NULL);</opcion>
+            <opcion>d) INSERT INTO Emp SELECT dni, nombre FROM Empleado WHERE prApellido IS NULL;</opcion>
+        </opciones>
+        <respuesta>b</respuesta>
+        <explicacion>La respuesta correcta es: INSERT INTO Emp(dni) SELECT dni FROM Empleado WHERE prApellido IS NULL;
+        </explicacion>
+    </pregunta>
+    <pregunta id="105">
+        <enunciado>Para crear un tipo objeto se usa el comando:</enunciado>
+        <opciones>
+            <opcion>a) CREATE TYPE AS OBJECT</opcion>
+            <opcion>b) CREATE OR REPLACE AS OBJECT</opcion>
+            <opcion>c) TYPE OR REPLACE TYPE AS OBJECT</opcion>
+            <opcion>d) CREATE TYPE IS TAB</opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: CREATE TYPE AS OBJECT</explicacion>
+    </pregunta>
+    <pregunta id="106">
+        <enunciado>Un tipo de objeto puede incorporar otro tipo de objeto haciendo:</enunciado>
+        <opciones>
+            <opcion>a) DECLARE vProfesor tobjProfesor</opcion>
+            <opcion>b) Domicilio tObjDomicilio</opcion>
+            <opcion>c) Nombre VARCHAR2(30)</opcion>
+            <opcion>d) CREATE TYPE tObjDomicilio INHERITS tObjCodPostal</opcion>
+        </opciones>
+        <respuesta>b</respuesta>
+        <explicacion>La respuesta correcta es: Domicilio tObjDomicilio</explicacion>
+    </pregunta>
+    <pregunta id="107">
+        <enunciado>Las restricciones que se pueden declarar en un PRAGMA RESTRICT_REFERENCES son:</enunciado>
+        <opciones>
+            <opcion>a) MAP|ORDER</opcion>
+            <opcion>b) MEMBER FUNCTION</opcion>
+            <opcion>c) SELF</opcion>
+            <opcion>d) RNDS, RNPS, WNDS, WNPD</opcion>
+        </opciones>
+        <respuesta>d</respuesta>
+        <explicacion>La respuesta correcta es: RNDS, RNPS, WNDS, WNPD</explicacion>
+    </pregunta>
+    <pregunta id="108">
+        <enunciado>Para implementar los métodos de un tipo de objeto se usa el comando:</enunciado>
+        <opciones>
+            <opcion>a) MEMBER FUNCTION</opcion>
+            <opcion>b) MAP MEMBER FUNCTION</opcion>
+            <opcion>c) CREATE TYPE BODY AS</opcion>
+            <opcion>d) TYPE OR REPLACE TYPE BODY</opcion>
+        </opciones>
+        <respuesta>c</respuesta>
+        <explicacion>La respuesta correcta es: CREATE TYPE BODY AS</explicacion>
+    </pregunta>
+    <pregunta id="109">
+        <enunciado>Para almacenar objetos de fila se usa el comando:</enunciado>
+        <opciones>
+            <opcion>a) CREATE TYPE tipo AS OBJECT</opcion>
+            <opcion>b) CREATE TYPE tipo IS TABLE OF</opcion>
+            <opcion>c) CREATE TYPE tipo OF ROW</opcion>
+            <opcion>d) CREATE VARRAY OF</opcion>
+        </opciones>
+        <respuesta>b</respuesta>
+        <explicacion>La respuesta correcta es: CREATE TYPE tipo IS TABLE OF</explicacion>
+    </pregunta>
+    <pregunta id="110">
+        <enunciado>Para insertar un registro en una tabla con nombre tEmpleado devolviendo el puntero a su campo clave
+            en la variable vEmpl se usaría el comando:
+        </enunciado>
+        <opciones>
+            <opcion>a) INSERT INTO Empleado VALUES(vEmpl) RETURNING REF(vEmpl)</opcion>
+            <opcion>b) INSERT vEmpleado VALUES(Empleado) RETURNING REF(vEmpl) INTO vEmpl;</opcion>
+            <opcion>c) INSERT INTO Empleado VALUES(vEmpleado) RETURNING REF(Empleado) INTO vEmpl;</opcion>
+            <opcion>d) INSERT INTO vEmpl VALUES(Empleado) RETURNING REF(vEmpl) INTO vEmpleado</opcion>
+        </opciones>
+        <respuesta>c</respuesta>
+        <explicacion>La respuesta correcta es: INSERT INTO Empleado VALUES(vEmpleado) RETURNING REF(Empleado) INTO
+            vEmpl;
+        </explicacion>
+    </pregunta>
+    <pregunta id="111">
+        <enunciado>Para obtener el objeto que apunta una referencia se usa el operador:</enunciado>
+        <opciones>
+            <opcion>a) MAP</opcion>
+            <opcion>b) ORDER</opcion>
+            <opcion>c) DEREF</opcion>
+            <opcion>d) REF</opcion>
+        </opciones>
+        <respuesta>c</respuesta>
+        <explicacion>La respuesta correcta es: DEREF</explicacion>
+    </pregunta>
+    <pregunta id="112">
+        <enunciado>Para crear un tipo de tabla anidada se usa el comando:</enunciado>
+        <opciones>
+            <opcion>a) TYPE tabla IS TABLE OF tipoTabla</opcion>
+            <opcion>b) TYPE tipo IS TABLE OF Tabla</opcion>
+            <opcion>c) TYPE tipo AS OBJECT Tabla</opcion>
+            <opcion>d) CREATE TYPE tabla IS TABLE OF tipo AS OBJECT</opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: TYPE tabla IS TABLE OF tipoTabla</explicacion>
+    </pregunta>
+    <pregunta id="113">
+        <enunciado>Para crear un subtipo Sociedad heredable del supertipo DatosGenerales se emplea el comando:
+        </enunciado>
+        <opciones>
+            <opcion>a) CREATE TYPE tObjSociedad UNDER tObjDatosGEnerales AS (…) NOT FINAL;</opcion>
+            <opcion>b) CREATE TYPE tObjDatosGEnerales UNDER tObjSociedad AS (…) FINAL;</opcion>
+            <opcion>c) CREATE TYPE tObjDatosGEnerales UNDER tObjSociedad AS (…) NOT INSTANTIABLE;</opcion>
+            <opcion>d) CREATE TYPE tObjSociedad UNDER tObjDatosGEnerales AS (…) FINAL NOT INSTANTIABLE;</opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: CREATE TYPE tObjSociedad UNDER tObjDatosGEnerales AS (…) NOT FINAL;
+        </explicacion>
+    </pregunta>
+    <pregunta id="114">
+        <enunciado>Para designar una columna de los registros que cumplen una condición en el WHERE se usa la palabra
+            clave:
+        </enunciado>
+        <opciones>
+            <opcion>a) REF</opcion>
+            <opcion>b) THE</opcion>
+            <opcion>c) SCOPE</opcion>
+            <opcion>d) DEREF</opcion>
+        </opciones>
+        <respuesta>b</respuesta>
+        <explicacion>La respuesta correcta es: THE</explicacion>
+    </pregunta>
+    <pregunta id="115">
+        <enunciado>Para insertar la salida de una consulta en una variable se usa el comando:</enunciado>
+        <opciones>
+            <opcion>a) SELECT * FROM tabla INTO variable;</opcion>
+            <opcion>b) SELECT * FROM tabla INTO variable WHERE condicion;</opcion>
+            <opcion>c) SELECT variable INTO Tabla WHERE condicion;</opcion>
+            <opcion>d) SELECT * INTO variable FROM Tabla WHERE condicion;</opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: SELECT * FROM tabla INTO variable;</explicacion>
+    </pregunta>
+    <pregunta id="116">
+        <enunciado>Dada la columna Empleado.fechaIngreso, ¿cómo se declararía y se reinicializaría una variable vFecha
+            del mismo tipo y con el valor '20/04/2000'?
+        </enunciado>
+        <opciones>
+            <opcion>a) vFecha Empleado.fechaIngreso%type:='20/04/2000';</opcion>
+            <opcion>b) Empleado.fechaIngreso vFecha%rowtype:='20/04/2000';</opcion>
+            <opcion>c) vFecha Empleado.fechaIngreso%date='20/04/2000';</opcion>
+            <opcion>d) vFecha fechaIngreso%row:='20/04/2000';</opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: vFecha Empleado.fechaIngreso%type:='20/04/2000';</explicacion>
+    </pregunta>
+    <pregunta id="117">
+        <enunciado>¿Qué dos comandos se escribirían en un bloque PL/SQL para contar el número de Empleados y mostrar
+            «Hay muchos» si hay más de 200?
+        </enunciado>
+        <opciones>
+            <opcion>a) SELECT COUNT(*) FROM Empleado INTO vNumEmpl; IF vNumEmpl>200 THEN PUT_LINE('Hay muchos'); END
+                IF;
+            </opcion>
+            <opcion>b) SELECT COUNT(*) INTO vNumEmpl FROM Empleado; IF vNumEmpl>200 THEN DBMS_OUTPUT.PUT_LINE('Hay
+                muchos'); END IF;
+            </opcion>
+            <opcion>c) SELECT COUNT(*) FROM Empleado INTO vNumEmpl; IF Empleado.vNumEmpl>200 THEN
+                DBMS_OUTPUT.PUT_LINE('Hay muchos'); END IF;
+            </opcion>
+            <opcion>d) SELECT COUNT(*) INTO Empleado.vNumEmpl FROM Empleado; IF Empleado.vNumEmpl>200 THEN
+                DBMS_OUTPUT.PUT_LINE('Hay muchos'); END IF;
+            </opcion>
+        </opciones>
+        <respuesta>b</respuesta>
+        <explicacion>La respuesta correcta es: SELECT COUNT(*) INTO vNumEmpl FROM Empleado; IF vNumEmpl>200 THEN
+            DBMS_OUTPUT.PUT_LINE('Hay muchos'); END IF;
+        </explicacion>
+    </pregunta>
+    <pregunta id="118">
+        <enunciado>¿Qué estructura repetitiva usarías para ejecutar, un número conocido de veces, un conjunto de
+            comandos?
+        </enunciado>
+        <opciones>
+            <opcion>a) Un bucle WHILE LOOP, LOOP EXIT WHEN o FOR IN LOOP indistintamente.</opcion>
+            <opcion>b) Solo con FOR IN LOOP.</opcion>
+            <opcion>c) Un bucle WHILE LOOP, LOOP EXIT WHEN o FOR IN LOOP, pero con FOR es más óptimo.</opcion>
+            <opcion>d) Solo con WHILE LOOP.</opcion>
+        </opciones>
+        <respuesta>c</respuesta>
+        <explicacion>La respuesta correcta es: Un bucle WHILE LOOP, LOOP EXIT WHEN o FOR IN LOOP, pero con FOR es más
+            óptimo.
+        </explicacion>
+    </pregunta>
+    <pregunta id="119">
+        <enunciado>La declaración TYPE rEmpleado IS RECORD(dni NUMBER(8,0), Nombre VARCHAR2(30) NOT NULL) y la tabla
+            Empleado con 20 registros:
+        </enunciado>
+        <opciones>
+            <opcion>a) Permite declarar una variable del modo vEmpleado rEmpleado;</opcion>
+            <opcion>b) Permite hacer una consulta del tipo SELECT dni, Nombre INTO rEmpleado FROM Empleado WHERE
+                dni=29388932;
+            </opcion>
+            <opcion>c) Permite declarar una variable del tipo rEmpleado vEmpleado;</opcion>
+            <opcion>d) Permite hacer una consulta del tipo SELECT dni, Nombre INTO vEmpleado FROM Empleado;</opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: Permite declarar una variable del modo vEmpleado rEmpleado;</explicacion>
+    </pregunta>
+    <pregunta id="120">
+        <enunciado>La declaración TYPE tEmpleado IS TABLE OF Empleado%ROWTYPE, vEmpleado tEmpleado y la tabla Empleado
+            con 20 registros:
+        </enunciado>
+        <opciones>
+            <opcion>a) Permite hacer una consulta del tipo SELECT dni, Nombre INTO vEmpleado FROM Empleado WHERE
+                dni=29388932;
+            </opcion>
+            <opcion>b) Permite hacer una consulta del tipo SELECT dni, Nombre INTO vEmpleado FROM Empleado WHERE
+                Ciudad='Madrid';
+            </opcion>
+            <opcion>c) Permite hacer una consulta del tipo SELECT count(dni) INTO vEmpleado FROM Empleado GROUP BY
+                dni;
+            </opcion>
+            <opcion>d) Permite hacer una consulta del tipo SELECT * INTO vEmpleado FROM Empleado WHERE
+                Ciudad='Madrid';
+            </opcion>
+        </opciones>
+        <respuesta>d</respuesta>
+        <explicacion>La respuesta correcta es: Permite hacer una consulta del tipo SELECT * INTO vEmpleado FROM Empleado
+            WHERE Ciudad='Madrid';
+        </explicacion>
+    </pregunta>
+    <pregunta id="121">
+        <enunciado>¿Cuál de los siguientes comandos con respecto al cursor cEmpleado no es correcto?</enunciado>
+        <opciones>
+            <opcion>a) CURSOR cEmpleado IS SELECT * FROM Empleado WHERE Ciudad='Madrid';</opcion>
+            <opcion>b) vrEmpleado Empleado%ROWTYPE;</opcion>
+            <opcion>c) FOR vrEmpleado IN cEmpleado LOOP</opcion>
+            <opcion>d) FOR cEmpleado IN vrEmpleado LOOP</opcion>
+        </opciones>
+        <respuesta>d</respuesta>
+        <explicacion>La respuesta correcta es: FOR cEmpleado IN vrEmpleado LOOP</explicacion>
+    </pregunta>
+    <pregunta id="122">
+        <enunciado>En relación a los disparadores, ¿qué comando está bien escrito?</enunciado>
+        <opciones>
+            <opcion>a) CREATE OR REPLACE TRIGGER BorraEmpl BEFORE INSERT DELETE Empleado ON EACH ROW</opcion>
+            <opcion>b) CREATE TRIGGER BorraEmpl AFTER INSERT Empleado ON EACH ROW</opcion>
+            <opcion>c) CREATE TRIGGER BorraEmpl BEFORE INSERT OR DELETE ON Empleado FOR EACH ROW</opcion>
+            <opcion>d) CREATE TRIGGER BorraEmpl BEFORE INSERT OR DELETE Empleado ON EACH ROW</opcion>
+        </opciones>
+        <respuesta>c</respuesta>
+        <explicacion>La respuesta correcta es: CREATE TRIGGER BorraEmpl BEFORE INSERT OR DELETE ON Empleado FOR EACH
+            ROW
+        </explicacion>
+    </pregunta>
+    <pregunta id="123">
+        <enunciado>Para la variable cadena='Hola mundo' y el procedimiento quitarVocales(cad IN OUT varchar2(255)), que
+            elimina las vocales de la cadena:
+        </enunciado>
+        <opciones>
+            <opcion>a) Al ejecutar los comandos en este orden, quitarVocales(cadena); cad='Hola'; el valor de cadena es
+                ahora Hl.
+            </opcion>
+            <opcion>b) Al ejecutar los comandos en este orden, cad='Hola'; quitarVocales(cadena); el valor de cadena es
+                ahora Hl.
+            </opcion>
+            <opcion>c) Al ejecutar los comandos en este orden, cad='Hola'; quitarVocales(cad); el valor de cadena es
+                ahora Hl.
+            </opcion>
+            <opcion>d) Al ejecutar los comandos en este orden, cad='Hola'; quitarVocales(cadena); el valor de cadena es
+                ahora Hlmnd.
+            </opcion>
+        </opciones>
+        <respuesta>d</respuesta>
+        <explicacion>La respuesta correcta es: Al ejecutar los comandos en este orden, cad='Hola';
+            quitarVocales(cadena); el valor de cadena es ahora Hlmnd.
+        </explicacion>
+    </pregunta>
+    <pregunta id="124">
+        <enunciado>En relación a las funciones, ¿cuál de las siguientes declaraciones es correcta?</enunciado>
+        <opciones>
+            <opcion>a) CREATE FUNCTION Formatear(IN cad VARCHAR2) RETURN VARCHAR2 IS</opcion>
+            <opcion>b) CREATE FUNCTION Formatear(cad VARCHAR2) RETURN VARCHAR2 IS</opcion>
+            <opcion>c) FUNCTION Formatear(cad) RETURN VARCHAR2 IS</opcion>
+            <opcion>d) CREATE OR REPLACE FUNCTION Formatear(IN cad VARCHAR2) RETURN VARCHAR2 IS</opcion>
+        </opciones>
+        <respuesta>b</respuesta>
+        <explicacion>La respuesta correcta es: CREATE FUNCTION Formatear(cad VARCHAR2) RETURN VARCHAR2 IS</explicacion>
+    </pregunta>
+    <pregunta id="125">
+        <enunciado>¿Qué comando DDL se usa para eliminar una tabla de una base de datos?</enunciado>
+        <opciones>
+            <opcion>a) DROP TABLE</opcion>
+            <opcion>b) DELETE TABLE</opcion>
+            <opcion>c) REMOVE TABLE</opcion>
+            <opcion>d) ERASE TABLE</opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: DROP TABLE</explicacion>
+    </pregunta>
+    <pregunta id="126">
+        <enunciado>¿Cuál de los siguientes comandos pertenece al DML?</enunciado>
+        <opciones>
+            <opcion>a) CREATE INDEX</opcion>
+            <opcion>b) TRUNCATE TABLE</opcion>
+            <opcion>c) UPDATE</opcion>
+            <opcion>d) DROP</opcion>
+        </opciones>
+        <respuesta>c</respuesta>
+        <explicacion>La respuesta correcta es: UPDATE</explicacion>
+    </pregunta>
+    <pregunta id="127">
+        <enunciado>¿Qué sentencia se utiliza para modificar la estructura de una tabla existente?</enunciado>
+        <opciones>
+            <opcion>a) MODIFY</opcion>
+            <opcion>b) ALTER TABLE</opcion>
+            <opcion>c) CHANGE TABLE</opcion>
+            <opcion>d) REDEFINE</opcion>
+        </opciones>
+        <respuesta>b</respuesta>
+        <explicacion>La respuesta correcta es: ALTER TABLE</explicacion>
+    </pregunta>
+    <pregunta id="128">
+        <enunciado>¿Qué comando DDL se usa para crear un índice?</enunciado>
+        <opciones>
+            <opcion>a) MAKE INDEX</opcion>
+            <opcion>b) CREATE INDEX</opcion>
+            <opcion>c) NEW INDEX</opcion>
+            <opcion>d) INIT INDEX</opcion>
+        </opciones>
+        <respuesta>b</respuesta>
+        <explicacion>La respuesta correcta es: CREATE INDEX</explicacion>
+    </pregunta>
+    <pregunta id="129">
+        <enunciado>¿Cuál es la diferencia principal entre DELETE y TRUNCATE?</enunciado>
+        <opciones>
+            <opcion>a) DELETE es más rápido</opcion>
+            <opcion>b) TRUNCATE permite WHERE</opcion>
+            <opcion>c) TRUNCATE borra todo sin registrar en log</opcion>
+            <opcion>d) DELETE borra todo sin posibilidad de rollback</opcion>
+        </opciones>
+        <respuesta>c</respuesta>
+        <explicacion>La respuesta correcta es: TRUNCATE borra todo sin registrar en log</explicacion>
+    </pregunta>
+    <pregunta id="130">
+        <enunciado>¿Qué sentencia se usa para insertar datos en una tabla?</enunciado>
+        <opciones>
+            <opcion>a) APPEND</opcion>
+            <opcion>b) ADD</opcion>
+            <opcion>c) INSERT INTO</opcion>
+            <opcion>d) SAVE INTO</opcion>
+        </opciones>
+        <respuesta>c</respuesta>
+        <explicacion>La respuesta correcta es: INSERT INTO</explicacion>
+    </pregunta>
+    <pregunta id="131">
+        <enunciado>¿Qué hace la sentencia COMMIT en SQL?</enunciado>
+        <opciones>
+            <opcion>a) Guarda los cambios permanentemente</opcion>
+            <opcion>b) Deshace los cambios</opcion>
+            <opcion>c) Cierra la sesión</opcion>
+            <opcion>d) Finaliza la transacción sin guardar</opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: Guarda los cambios permanentemente</explicacion>
+    </pregunta>
+    <pregunta id="132">
+        <enunciado>¿Qué comando permite cambiar el nombre de una tabla?</enunciado>
+        <opciones>
+            <opcion>a) MODIFY TABLE</opcion>
+            <opcion>b) CHANGE NAME</opcion>
+            <opcion>c) RENAME</opcion>
+            <opcion>d) ALTER RENAME</opcion>
+        </opciones>
+        <respuesta>c</respuesta>
+        <explicacion>La respuesta correcta es: RENAME</explicacion>
+    </pregunta>
+    <pregunta id="133">
+        <enunciado>¿Cuál de los siguientes comandos borra permanentemente una base de datos completa?</enunciado>
+        <opciones>
+            <opcion>a) REMOVE DATABASE</opcion>
+            <opcion>b) DELETE DATABASE</opcion>
+            <opcion>c) ERASE DATABASE</opcion>
+            <opcion>d) DROP DATABASE</opcion>
+        </opciones>
+        <respuesta>d</respuesta>
+        <explicacion>La respuesta correcta es: DROP DATABASE</explicacion>
+    </pregunta>
+    <pregunta id="134">
+        <enunciado>¿Qué sentencia es utilizada para cambiar el valor de una fila específica?</enunciado>
+        <opciones>
+            <opcion>a) CHANGE</opcion>
+            <opcion>b) EDIT</opcion>
+            <opcion>c) UPDATE</opcion>
+            <opcion>d) MODIFY VALUE</opcion>
+        </opciones>
+        <respuesta>c</respuesta>
+        <explicacion>La respuesta correcta es: UPDATE</explicacion>
+    </pregunta>
+    <pregunta id="135">
+        <enunciado>¿Qué comando se utiliza para consultar información de una base de datos?</enunciado>
+        <opciones>
+            <opcion>a) SELECT</opcion>
+            <opcion>b) FETCH</opcion>
+            <opcion>c) QUERY</opcion>
+            <opcion>d) GET</opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: SELECT</explicacion>
+    </pregunta>
+    <pregunta id="136">
+        <enunciado>¿Qué significa SQL?</enunciado>
+        <opciones>
+            <opcion>a) Standard Query Language</opcion>
+            <opcion>b) Structured Question Language</opcion>
+            <opcion>c) Structured Query Language</opcion>
+            <opcion>d) Simple Query Logic</opcion>
+        </opciones>
+        <respuesta>c</respuesta>
+        <explicacion>La respuesta correcta es: Structured Query Language</explicacion>
+    </pregunta>
+    <pregunta id="137">
+        <enunciado>¿Qué tipo de JOIN devuelve todas las filas cuando hay coincidencia en una de las tablas?</enunciado>
+        <opciones>
+            <opcion>a) INNER JOIN</opcion>
+            <opcion>b) LEFT JOIN</opcion>
+            <opcion>c) FULL JOIN</opcion>
+            <opcion>d) RIGHT JOIN</opcion>
+        </opciones>
+        <respuesta>c</respuesta>
+        <explicacion>La respuesta correcta es: FULL JOIN</explicacion>
+    </pregunta>
+    <pregunta id="138">
+        <enunciado>¿Cuál es el propósito de una clave primaria en una tabla?</enunciado>
+        <opciones>
+            <opcion>a) Almacenar contraseñas</opcion>
+            <opcion>b) Relacionar con otra tabla</opcion>
+            <opcion>c) Identificar filas de forma única</opcion>
+            <opcion>d) Validar los datos insertados</opcion>
+        </opciones>
+        <respuesta>c</respuesta>
+        <explicacion>La respuesta correcta es: Identificar filas de forma única</explicacion>
+    </pregunta>
+    <pregunta id="139">
+        <enunciado>¿Cuál comando se usa para eliminar todos los registros de una tabla sin borrar la estructura?
+        </enunciado>
+        <opciones>
+            <opcion>a) DELETE</opcion>
+            <opcion>b) DROP</opcion>
+            <opcion>c) REMOVE</opcion>
+            <opcion>d) TRUNCATE</opcion>
+        </opciones>
+        <respuesta>d</respuesta>
+        <explicacion>La respuesta correcta es: TRUNCATE</explicacion>
+    </pregunta>
+    <pregunta id="140">
+        <enunciado>¿Qué operador se utiliza para buscar un valor dentro de un rango?</enunciado>
+        <opciones>
+            <opcion>a) BETWEEN</opcion>
+            <opcion>b) WITHIN</opcion>
+            <opcion>c) IN RANGE</opcion>
+            <opcion>d) INSIDE</opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: BETWEEN</explicacion>
+    </pregunta>
+    <pregunta id="141">
+        <enunciado>¿Cuál sentencia se usa para combinar resultados de dos consultas?</enunciado>
+        <opciones>
+            <opcion>a) JOIN</opcion>
+            <opcion>b) UNION</opcion>
+            <opcion>c) MERGE</opcion>
+            <opcion>d) COMBINE</opcion>
+        </opciones>
+        <respuesta>b</respuesta>
+        <explicacion>La respuesta correcta es: UNION</explicacion>
+    </pregunta>
+    <pregunta id="142">
+        <enunciado>¿Qué palabra clave se usa para ordenar los resultados de una consulta?</enunciado>
+        <opciones>
+            <opcion>a) SORT BY</opcion>
+            <opcion>b) ORDER</opcion>
+            <opcion>c) ARRANGE BY</opcion>
+            <opcion>d) ORDER BY</opcion>
+        </opciones>
+        <respuesta>d</respuesta>
+        <explicacion>La respuesta correcta es: ORDER BY</explicacion>
+    </pregunta>
+    <pregunta id="143">
+        <enunciado>¿Qué comando se usa para dar permisos a un usuario en SQL?</enunciado>
+        <opciones>
+            <opcion>a) PERMIT</opcion>
+            <opcion>b) GRANT</opcion>
+            <opcion>c) ALLOW</opcion>
+            <opcion>d) AUTHORIZE</opcion>
+        </opciones>
+        <respuesta>b</respuesta>
+        <explicacion>La respuesta correcta es: GRANT</explicacion>
+    </pregunta>
+    <pregunta id="144">
+        <enunciado>¿Cuál es el propósito del comando HAVING en SQL?</enunciado>
+        <opciones>
+            <opcion>a) Filtrar resultados después de agruparlos</opcion>
+            <opcion>b) Definir condiciones para INSERT</opcion>
+            <opcion>c) Filtrar filas antes de agrupar</opcion>
+            <opcion>d) Actualizar datos</opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: Filtrar resultados después de agruparlos</explicacion>
+    </pregunta>
+    <pregunta id="145">
+        <enunciado>¿Qué sentencia elimina la columna 'foto' de la tabla 'grupos'?</enunciado>
+        <opciones>
+            <opcion>ALTER TABLE grupos DROP COLUMN foto;</opcion>
+            <opcion>DELETE COLUMN foto FROM grupos;</opcion>
+            <opcion>REMOVE foto FROM grupos;</opcion>
+            <opcion>DROP foto FROM grupos;</opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: ALTER TABLE grupos DROP COLUMN foto;</explicacion>
+    </pregunta>
+    <pregunta id="146">
+        <enunciado>¿Qué sentencia elimina la columna 'portada' de la tabla 'albumes'?</enunciado>
+        <opciones>
+            <opcion>ALTER TABLE albumes DROP COLUMN portada;</opcion>
+            <opcion>DELETE portada FROM albumes;</opcion>
+            <opcion>REMOVE portada FROM albumes;</opcion>
+            <opcion>DROP portada FROM albumes;</opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: ALTER TABLE albumes DROP COLUMN portada;</explicacion>
+    </pregunta>
+    <pregunta id="147">
+        <enunciado>¿Qué sentencia INSERT sería correcta para añadir el grupo U2?</enunciado>
+        <opciones>
+            <opcion>INSERT INTO grupos VALUES (1, 'U2', 'Irlandesa', 'U2 es una banda de rock originaria de Dublín
+                (Irlanda) formada en 1976.');
+            </opcion>
+            <opcion>INSERT INTO grupos (nombre, nacionalidad, biografía) VALUES ('U2', 'Irlandesa', 'U2 es una
+                banda...');
+            </opcion>
+            <opcion>INSERT INTO grupos (cod_grupo, nombre, nacionalidad, biografía) VALUES ('U2', 'Irlandesa', '...');
+            </opcion>
+            <opcion>INSERT INTO grupos (cod_grupo, nombre, nacionalidad, biografía) VALUES (1, 'U2', 'Irlandesa', 'U2 es
+                una banda de rock originaria de Dublín (Irlanda) formada en 1976.');
+            </opcion>
+        </opciones>
+        <respuesta>d</respuesta>
+        <explicacion>La respuesta correcta es: INSERT INTO grupos (cod_grupo, nombre, nacionalidad, biografía) VALUES
+            (1, 'U2', 'Irlandesa', 'U2 es una banda de rock originaria de Dublín (Irlanda) formada en 1976.');
+        </explicacion>
+    </pregunta>
+    <pregunta id="148">
+        <enunciado>¿Cuál sería una sentencia válida para insertar el álbum 'The Joshua Tree' de U2 con cod_album 1 y
+            cod_grupo 1?
+        </enunciado>
+        <opciones>
+            <opcion>INSERT INTO albumes VALUES (1, 'The Joshua Tree', 1987, 1);</opcion>
+            <opcion>INSERT INTO albumes (cod_album, titulo, fecha, cod_grupo) VALUES (1, 'The Joshua Tree', 1987, 1);
+            </opcion>
+            <opcion>ADD INTO albumes (1, 'The Joshua Tree', 1987, 1);</opcion>
+            <opcion>INSERT INTO albumes ('The Joshua Tree', 1987, 1);</opcion>
+        </opciones>
+        <respuesta>b</respuesta>
+        <explicacion>La respuesta correcta es: INSERT INTO albumes (cod_album, titulo, fecha, cod_grupo) VALUES (1, 'The
+            Joshua Tree', 1987, 1);
+        </explicacion>
+    </pregunta>
+    <pregunta id="149">
+        <enunciado>¿Qué sentencia INSERT agrega la canción 'Where the Streets Have No Name' al álbum 1?</enunciado>
+        <opciones>
+            <opcion>INSERT INTO canciones VALUES (1, 'Where the Streets Have No Name', '00:05:38', 1, 1);</opcion>
+            <opcion>INSERT INTO canciones (cod_cancion, titulo, duracion, num_pista, cod_album) VALUES (1, 'Where the
+                Streets Have No Name', '00:05:38', 1, 1);
+            </opcion>
+            <opcion>INSERT canción INTO canciones VALUES (1, 'Where...', '00:05:38', 1, 1);</opcion>
+            <opcion>ADD INTO canciones VALUES (1, 'Where...', '00:05:38', 1, 1);</opcion>
+        </opciones>
+        <respuesta>b</respuesta>
+        <explicacion>La respuesta correcta es: INSERT INTO canciones (cod_cancion, titulo, duracion, num_pista,
+            cod_album) VALUES (1, 'Where the Streets Have No Name', '00:05:38', 1, 1);
+        </explicacion>
+    </pregunta>
+    <pregunta id="150">
+        <enunciado>¿Qué sentencia SQL lista todos los grupos estadounidenses?</enunciado>
+        <opciones>
+            <opcion>SELECT * FROM grupos WHERE nacionalidad = 'Estadounidense';</opcion>
+            <opcion>SELECT nombre FROM grupos WHERE nacionalidad = 'EEUU';</opcion>
+            <opcion>SELECT nacionalidad FROM grupos WHERE nacionalidad LIKE '%USA%';</opcion>
+            <opcion>SELECT * FROM grupos WHERE pais = 'Estados Unidos';</opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: SELECT * FROM grupos WHERE nacionalidad = 'Estadounidense';</explicacion>
+    </pregunta>
+    <pregunta id="151">
+        <enunciado>¿Qué sentencia muestra los álbumes publicados entre 1980 y 1990?</enunciado>
+        <opciones>
+            <opcion>SELECT * FROM albumes WHERE fecha BETWEEN 1980 AND 1990;</opcion>
+            <opcion>SELECT * FROM albumes WHERE fecha >= 1980 AND fecha&gt;= 1990;
+            </opcion>
+            <opcion>SELECT titulo FROM albumes WHERE fecha BETWEEN 1980 AND 1990;</opcion>
+            <opcion>Todas las anteriores son correctas.</opcion>
+        </opciones>
+        <respuesta>d</respuesta>
+        <explicacion>La respuesta correcta es: Todas las anteriores son correctas.</explicacion>
+    </pregunta>
+    <pregunta id="152">
+        <enunciado>¿Qué sentencia muestra los grupos italianos con álbumes entre 1980 y 1990?</enunciado>
+        <opciones>
+            <opcion>SELECT * FROM grupos g JOIN albumes a ON g.cod_grupo = a.cod_grupo WHERE g.nacionalidad = 'Italiana'
+                AND a.fecha BETWEEN 1980 AND 1990;
+            </opcion>
+            <opcion>SELECT nombre FROM grupos WHERE nacionalidad = 'Italiana';</opcion>
+            <opcion>SELECT * FROM albumes WHERE fecha BETWEEN 1980 AND 1990;</opcion>
+            <opcion>SELECT * FROM grupos WHERE nacionalidad = 'Italiana' AND fecha BETWEEN 1980 AND 1990;</opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: SELECT * FROM grupos g JOIN albumes a ON g.cod_grupo = a.cod_grupo WHERE
+            g.nacionalidad = 'Italiana' AND a.fecha BETWEEN 1980 AND 1990;
+        </explicacion>
+    </pregunta>
+    <pregunta id="153">
+        <enunciado>¿Qué sentencia muestra un listado de álbumes con sus géneros?</enunciado>
+        <opciones>
+            <opcion>SELECT a.titulo, g.nombre FROM albumes a JOIN generos g ON a.cod_genero = g.cod_genero;</opcion>
+            <opcion>SELECT * FROM generos;</opcion>
+            <opcion>SELECT * FROM albumes;</opcion>
+            <opcion>SELECT titulo FROM albumes WHERE genero IS NOT NULL;</opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: SELECT a.titulo, g.nombre FROM albumes a JOIN generos g ON a.cod_genero =
+            g.cod_genero;
+        </explicacion>
+    </pregunta>
+    <pregunta id="154">
+        <enunciado>¿Cómo sabrías cuántos grupos hay por nacionalidad?</enunciado>
+        <opciones>
+            <opcion>SELECT nacionalidad, COUNT(*) FROM grupos GROUP BY nacionalidad;</opcion>
+            <opcion>SELECT COUNT(*) FROM grupos;</opcion>
+            <opcion>SELECT * FROM grupos GROUP BY nacionalidad;</opcion>
+            <opcion>SELECT nacionalidad FROM grupos GROUP BY nacionalidad;</opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: SELECT nacionalidad, COUNT(*) FROM grupos GROUP BY nacionalidad;
+        </explicacion>
+    </pregunta>
+    <pregunta id="155">
+        <enunciado>¿Qué instrucción SQL crea una tabla llamada 'Empleado'?</enunciado>
+        <opciones>
+            <opcion>a) ADD TABLE Empleado (id INT, nombre VARCHAR(100));</opcion>
+            <opcion>b) NEW TABLE Empleado (id INT, nombre VARCHAR(100));</opcion>
+            <opcion>c) ALTER TABLE Empleado ADD COLUMN (id INT, nombre VARCHAR(100));</opcion>
+            <opcion>d) CREATE TABLE Empleado (id INT, nombre VARCHAR(100));</opcion>
+        </opciones>
+        <respuesta>d</respuesta>
+        <explicacion>La respuesta correcta es: CREATE TABLE Empleado (id INT, nombre VARCHAR(100));</explicacion>
+    </pregunta>
+    <pregunta id="156">
+        <enunciado>¿Cuál es la manera correcta de añadir una columna a una tabla existente usando SQL?</enunciado>
+        <opciones>
+            <opcion>a) CREATE TABLE Empleado ADD edad INT;</opcion>
+            <opcion>b) ALTER TABLE Empleado ADD COLUMN edad INT;</opcion>
+            <opcion>c) ADD COLUMN edad INT IN Empleado;</opcion>
+            <opcion>d) UPDATE TABLE Empleado ADD edad INT;</opcion>
+        </opciones>
+        <respuesta>b</respuesta>
+        <explicacion>La respuesta correcta es: ALTER TABLE Empleado ADD COLUMN edad INT;</explicacion>
+    </pregunta>
+    <pregunta id="157">
+        <enunciado>¿Qué cláusula indica que una columna no puede tener valores repetidos?</enunciado>
+        <opciones>
+            <opcion>a) PRIMARY KEY</opcion>
+            <opcion>b) CHECK</opcion>
+            <opcion>c) UNIQUE</opcion>
+            <opcion>d) DEFAULT</opcion>
+        </opciones>
+        <respuesta>c</respuesta>
+        <explicacion>La respuesta correcta es: UNIQUE</explicacion>
+    </pregunta>
+    <pregunta id="158">
+        <enunciado>¿Cuál opción permite establecer automáticamente valores numéricos incrementales en una columna?
+        </enunciado>
+        <opciones>
+            <opcion>a) AUTONUMBER</opcion>
+            <opcion>b) AUTOINCREMENTAL</opcion>
+            <opcion>c) AUTO_INCREMENT</opcion>
+            <opcion>d) AUTO_NUM</opcion>
+        </opciones>
+        <respuesta>c</respuesta>
+        <explicacion>La respuesta correcta es: AUTO_INCREMENT</explicacion>
+    </pregunta>
+    <pregunta id="159">
+        <enunciado>¿Cómo definirías una columna con valores por defecto usando SQL?</enunciado>
+        <opciones>
+            <opcion>a) Telefono VARCHAR(15) AUTO 'Desconocido'</opcion>
+            <opcion>b) Telefono VARCHAR(15) SET 'Desconocido'</opcion>
+            <opcion>c) Telefono VARCHAR(15) DEFAULT 'Desconocido'</opcion>
+            <opcion>d) Telefono VARCHAR(15) VALUE 'Desconocido'</opcion>
+        </opciones>
+        <respuesta>c</respuesta>
+        <explicacion>La respuesta correcta es: Telefono VARCHAR(15) DEFAULT 'Desconocido'</explicacion>
+    </pregunta>
+    <pregunta id="160">
+        <enunciado>¿Qué instrucción SQL eliminaría la columna 'Telefono' de la tabla 'Empleado'?</enunciado>
+        <opciones>
+            <opcion>a) ALTER TABLE Empleado DROP COLUMN Telefono;</opcion>
+            <opcion>b) ALTER TABLE Empleado REMOVE Telefono;</opcion>
+            <opcion>c) ALTER TABLE Empleado DELETE COLUMN Telefono;</opcion>
+            <opcion>d) DROP COLUMN Telefono FROM Empleado;</opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: ALTER TABLE Empleado DROP COLUMN Telefono;</explicacion>
+    </pregunta>
+    <pregunta id="161">
+        <enunciado>¿Qué restricción asegura que una columna nunca contenga valores nulos?</enunciado>
+        <opciones>
+            <opcion>a) DEFAULT</opcion>
+            <opcion>b) NOT NULL</opcion>
+            <opcion>c) CHECK</opcion>
+            <opcion>d) UNIQUE</opcion>
+        </opciones>
+        <respuesta>b</respuesta>
+        <explicacion>La respuesta correcta es: NOT NULL</explicacion>
+    </pregunta>
+    <pregunta id="162">
+        <enunciado>¿Cuál de estas instrucciones crea correctamente una clave primaria compuesta en SQL?</enunciado>
+        <opciones>
+            <opcion>a) PRIMARY(id_empleado, id_proyecto)</opcion>
+            <opcion>b) SET PRIMARY KEY(id_empleado, id_proyecto)</opcion>
+            <opcion>c) PRIMARY KEY(id_empleado, id_proyecto)</opcion>
+            <opcion>d) PRIMARY KEY COMPOSED(id_empleado, id_proyecto)</opcion>
+        </opciones>
+        <respuesta>c</respuesta>
+        <explicacion>La respuesta correcta es: PRIMARY KEY(id_empleado, id_proyecto)</explicacion>
+    </pregunta>
+    <pregunta id="163">
+        <enunciado>¿Qué sentencia SQL modificaría el tipo de dato de la columna 'salario' a DECIMAL(12,2)?</enunciado>
+        <opciones>
+            <opcion>a) ALTER TABLE empleados MODIFY COLUMN salario DECIMAL(12,2);</opcion>
+            <opcion>b) ALTER TABLE empleados UPDATE salario DECIMAL(12,2);</opcion>
+            <opcion>c) ALTER salario COLUMN DECIMAL(12,2);</opcion>
+            <opcion>d) CHANGE COLUMN salario DECIMAL(12,2);</opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: ALTER TABLE empleados MODIFY COLUMN salario DECIMAL(12,2);</explicacion>
+    </pregunta>
+    <pregunta id="164">
+        <enunciado>¿Cuál de las siguientes instrucciones SQL añade una restricción UNIQUE sobre la columna 'Email'?
+        </enunciado>
+        <opciones>
+            <opcion>a) ALTER TABLE empleados ADD CONSTRAINT UNIQUE (Email);</opcion>
+            <opcion>b) ALTER TABLE empleados ADD COLUMN UNIQUE Email;</opcion>
+            <opcion>c) ALTER empleados TABLE UNIQUE Email;</opcion>
+            <opcion>d) SET UNIQUE Email ON empleados;</opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: ALTER TABLE empleados ADD CONSTRAINT UNIQUE (Email);</explicacion>
+    </pregunta>
+    <pregunta id="165">
+        <enunciado>¿Cuál consulta devuelve todos los empleados ordenados por salario descendente?</enunciado>
+        <opciones>
+            <opcion>a) SELECT * FROM empleados ORDER salario DESC;</opcion>
+            <opcion>b) SELECT salario DESC FROM empleados;</opcion>
+            <opcion>c) SELECT * FROM empleados SORT salario DESC;</opcion>
+            <opcion>d) SELECT * FROM empleados ORDER BY salario DESC;</opcion>
+        </opciones>
+        <respuesta>d</respuesta>
+        <explicacion>La respuesta correcta es: SELECT * FROM empleados ORDER BY salario DESC;</explicacion>
+    </pregunta>
+    <pregunta id="166">
+        <enunciado>¿Qué función SQL usarías para contar el número total de empleados en una tabla?</enunciado>
+        <opciones>
+            <opcion>a) COUNT()</opcion>
+            <opcion>b) TOTAL()</opcion>
+            <opcion>c) SUM()</opcion>
+            <opcion>d) AVG()</opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: COUNT()</explicacion>
+    </pregunta>
+    <pregunta id="167">
+        <enunciado>¿Cuál consulta calcula el salario promedio de todos los empleados?</enunciado>
+        <opciones>
+            <opcion>a) SELECT SUM(salario) FROM empleados;</opcion>
+            <opcion>b) SELECT AVG(salario) FROM empleados;</opcion>
+            <opcion>c) SELECT TOTAL(salario) FROM empleados;</opcion>
+            <opcion>d) SELECT COUNT(salario) FROM empleados;</opcion>
+        </opciones>
+        <respuesta>b</respuesta>
+        <explicacion>La respuesta correcta es: SELECT AVG(salario) FROM empleados;</explicacion>
+    </pregunta>
+    <pregunta id="168">
+        <enunciado>¿Qué sentencia SQL devuelve cuántos empleados hay por cada departamento?</enunciado>
+        <opciones>
+            <opcion>a) SELECT departamento, COUNT(*) FROM empleados GROUP BY departamento;</opcion>
+            <opcion>b) SELECT departamento, SUM(*) FROM empleados;</opcion>
+            <opcion>c) SELECT departamento, COUNT(*) FROM empleados GROUP BY salario;</opcion>
+            <opcion>d) SELECT departamento, COUNT(*) FROM empleados ORDER BY departamento;</opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: SELECT departamento, COUNT(*) FROM empleados GROUP BY departamento;
+        </explicacion>
+    </pregunta>
+    <pregunta id="169">
+        <enunciado>¿Qué instrucción SQL devuelve todos los empleados cuyo salario es superior a 3000?</enunciado>
+        <opciones>
+            <opcion>a) SELECT nombre FROM empleados HAVING salario > 3000;</opcion>
+            <opcion>b) SELECT nombre FROM empleados SALARIO > 3000;</opcion>
+            <opcion>c) SELECT nombre FROM empleados ORDER BY salario > 3000;</opcion>
+            <opcion>d) SELECT nombre FROM empleados WHERE salario > 3000;</opcion>
+        </opciones>
+        <respuesta>d</respuesta>
+        <explicacion>La respuesta correcta es: SELECT nombre FROM empleados WHERE salario > 3000;</explicacion>
+    </pregunta>
+    <pregunta id="170">
+        <enunciado>¿Qué consulta devuelve los empleados que tienen un salario superior al salario promedio general de la
+            empresa?
+        </enunciado>
+        <opciones>
+            <opcion>a) SELECT nombre FROM empleados WHERE salario > AVG(salario);</opcion>
+            <opcion>b) SELECT nombre FROM empleados HAVING salario > AVG(salario);</opcion>
+            <opcion>c) SELECT nombre FROM empleados WHERE salario > (SELECT AVG(salario) FROM empleados);</opcion>
+            <opcion>d) SELECT AVG(salario) FROM empleados WHERE salario > promedio;</opcion>
+        </opciones>
+        <respuesta>c</respuesta>
+        <explicacion>La respuesta correcta es: SELECT nombre FROM empleados WHERE salario > (SELECT AVG(salario) FROM
+            empleados);
+        </explicacion>
+    </pregunta>
+    <pregunta id="171">
+        <enunciado>¿Qué cláusula se utiliza para filtrar resultados agrupados por condiciones específicas?</enunciado>
+        <opciones>
+            <opcion>a) HAVING</opcion>
+            <opcion>b) GROUP BY</opcion>
+            <opcion>c) ORDER BY</opcion>
+            <opcion>d) WHERE</opcion>
+        </opciones>
+        <respuesta>a</respuesta>
+        <explicacion>La respuesta correcta es: HAVING</explicacion>
+    </pregunta>
+    <pregunta id="172">
+        <enunciado>¿Qué consulta obtiene los departamentos cuyo salario promedio supera los 4000 euros?</enunciado>
+        <opciones>
+            <opcion>a) SELECT departamento FROM empleados WHERE AVG(salario) > 4000;</opcion>
+            <opcion>b) SELECT departamento, AVG(salario) FROM empleados;</opcion>
+            <opcion>c) SELECT departamento FROM empleados GROUP BY departamento HAVING AVG(salario) > 4000;</opcion>
+            <opcion>d) SELECT departamento FROM empleados GROUP BY departamento WHERE AVG(salario) > 4000;</opcion>
+        </opciones>
+        <respuesta>c</respuesta>
+        <explicacion>La respuesta correcta es: SELECT departamento FROM empleados GROUP BY departamento HAVING
+            AVG(salario) > 4000;
+        </explicacion>
+    </pregunta>
+    <pregunta id="173">
+        <enunciado>¿Cuál consulta obtiene los empleados junto con sus departamentos (todos tienen departamento)?
+        </enunciado>
+        <opciones>
+            <opcion>a) SELECT empleados.nombre, departamentos.nombre FROM empleados RIGHT JOIN departamentos ON
+                empleados.id_departamento = departamentos.id_departamento;
+            </opcion>
+            <opcion>b) SELECT empleados.nombre, departamentos.nombre FROM empleados JOIN departamentos ON
+                empleados.id_departamento = departamentos.id_departamento;
+            </opcion>
+            <opcion>c) SELECT empleados.nombre, departamentos.nombre FROM empleados OUTER JOIN departamentos ON
+                empleados.id_departamento = departamentos.id_departamento;
+            </opcion>
+            <opcion>d) SELECT empleados.nombre, departamentos.nombre FROM empleados LEFT JOIN departamentos ON
+                empleados.id_departamento = departamentos.id_departamento;
+            </opcion>
+        </opciones>
+        <respuesta>b</respuesta>
+        <explicacion>La respuesta correcta es: SELECT empleados.nombre, departamentos.nombre FROM empleados JOIN
+            departamentos ON empleados.id_departamento = departamentos.id_departamento;
+        </explicacion>
+    </pregunta>
+    <pregunta id="174">
+        <enunciado>¿Cuál consulta obtiene los empleados que NO están asignados a ningún proyecto?</enunciado>
+        <opciones>
+            <opcion>a) SELECT empleados.nombre FROM empleados JOIN asignaciones ON empleados.id_empleado =
+                asignaciones.id_empleado WHERE asignaciones.id_empleado IS NULL;
+            </opcion>
+            <opcion>b) SELECT empleados.nombre FROM empleados LEFT JOIN asignaciones ON empleados.id_empleado =
+                asignaciones.id_empleado WHERE asignaciones.id_empleado IS NULL;
+            </opcion>
+            <opcion>c) SELECT empleados.nombre FROM empleados JOIN asignaciones ON empleados.id_empleado =
+                asignaciones.id_empleado;
+            </opcion>
+            <opcion>d) SELECT empleados.nombre FROM empleados RIGHT JOIN asignaciones ON empleados.id_empleado =
+                asignaciones.id_empleado;
+            </opcion>
+        </opciones>
+        <respuesta>b</respuesta>
+        <explicacion>La respuesta correcta es: SELECT empleados.nombre FROM empleados LEFT JOIN asignaciones ON
+            empleados.id_empleado = asignaciones.id_empleado WHERE asignaciones.id_empleado IS NULL;
+        </explicacion>
+    </pregunta>
+</preguntas>
