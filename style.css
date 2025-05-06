@@ -111,6 +111,7 @@ button:focus {
  @media (max-width: 460px) {
   body{
     width: 95%;
+    background: repeat-y;
   }
   h1{
     font-size: 28px;
