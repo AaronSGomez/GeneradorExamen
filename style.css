@@ -26,7 +26,6 @@ body {
   margin: auto;
   justify-content: center;
   flex-wrap: wrap;
-  background-color:darkblue;
   background-image: url("./assets/bg.jpg"); 
   background-position: center;
   background-size: cover;
@@ -111,7 +110,10 @@ button:focus {
  @media (max-width: 460px) {
   body{
     width: 95%;
-    background: repeat-y;
+    background-image: url("./assets/bgmovil.jpg"); 
+    background-position: center;
+    background-size: cover;
+    background-repeat:repeat-y;
   }
   h1{
     font-size: 28px;
