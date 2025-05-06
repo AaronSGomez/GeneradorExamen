@@ -41,13 +41,16 @@ function mostrarPregunta() {
 
   // Crear botones con las opciones correctamente referenciadas
   [preguntaActual.A, preguntaActual.B, preguntaActual.C, preguntaActual.D].forEach(opcion => {
-      opcionesHTML += `<button onclick="verificarRespuesta('${opcion}')">${opcion}</button><br>`;
+    const opcionCodificada = encodeURIComponent(opcion);
+    opcionesHTML += `<li><a href="#" onclick="verificarRespuesta(decodeURIComponent('${opcionCodificada}'))">${opcion}</a></li>`;
   });
 
   document.getElementById("pregunta-container").innerHTML = `
       <h3>${preguntaActual.enunciado}</h3>
+      <ul>
       ${opcionesHTML}
-      <button onclick="saltar()">Dejar sin contestar</button><br>
+      <li><a href="#" onclick="saltar()">Dejar sin contestar</a></li>
+      </ul>
       <p>Pregunta ${indicePregunta+1} de 40</p>`;
 }
 
