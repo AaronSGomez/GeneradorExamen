@@ -3,6 +3,7 @@ let indicePregunta = 0;
 let aciertos = 0;
 let fallos=0;
 let saltadas=0;
+let cantidadPreguntas=0;
 
 async function cargarXML() {
   const response = await fetch('./archivo.xml');
@@ -19,6 +20,7 @@ async function cargarXML() {
     D: p.getElementsByTagName("D")[0]?.textContent ?? "",
     respuestaCorrecta: p.getElementsByTagName("respuesta_correcta")[0]?.textContent ?? ""
   }));
+  cantidadPreguntas= preguntas.length;
   seleccion =obtenerPreguntasAleatorias(preguntas);
   mostrarPregunta();
 }
@@ -54,7 +56,7 @@ function mostrarPregunta() {
       ${opcionesHTML}
       <li><a href="#" onclick="saltar()">Dejar sin contestar</a></li>
       </ul>
-      <p>Pregunta ${indicePregunta+1} de 40</p>`;
+      <p>Pregunta ${indicePregunta+1} de 40 . Preguntas XML total: ${cantidadPreguntas}</p>`;
 }
 
 function verificarRespuesta(respuestaSeleccionada) {
