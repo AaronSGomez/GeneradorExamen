@@ -6,7 +6,7 @@ let saltadas=0;
 let cantidadPreguntas=0;
 
 async function cargarXML() {
-  const response = await fetch('./archivo.xml');
+  const response = await fetch('./assets/xml/FundamentosQuiz.xml');
   const text = await response.text();
   const parser = new DOMParser();
   const xmlDoc = parser.parseFromString(text, "text/xml");

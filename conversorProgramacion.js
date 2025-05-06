@@ -7,49 +7,52 @@ function convertirXMLaNuevoFormato(entradaPath, salidaPath) {
         const dom = new JSDOM(xmlContent, { contentType: "text/xml" });
         const doc = dom.window.document;
 
-        const nuevoDoc = new JSDOM().window.document;
-        const root = nuevoDoc.createElement("documento");
+        // Crear un nuevo documento XML correctamente sin espacio de nombres
+        const impl = doc.implementation;
+        const nuevoDoc = impl.createDocument(null, "documento", null); // Aquí se crea el documento vacío con la raíz <documento>
+        const root = nuevoDoc.documentElement;
 
         const preguntas = [...doc.querySelectorAll("pregunta")];
 
-        preguntas.forEach((pregunta, index) => {
+        preguntas.forEach((pregunta) => {
             const nuevaPregunta = nuevoDoc.createElement("pregunta");
 
-            const enunciado = pregunta.querySelector("enunciado")?.textContent.trim();
-            const opciones = [...pregunta.querySelectorAll("opcion")];
-            const respuesta = pregunta.querySelector("respuesta")?.textContent.trim().toUpperCase();
-            const explicacion = pregunta.querySelector("explicacion")?.textContent.trim();
-
             // Enunciado
+            const enunciado = pregunta.querySelector("enunciado")?.textContent.trim();
             const nuevoEnunciado = nuevoDoc.createElement("enunciado");
             nuevoEnunciado.textContent = enunciado;
             nuevaPregunta.appendChild(nuevoEnunciado);
 
             // Opciones A, B, C, D
             const letras = ['A', 'B', 'C', 'D'];
+            const opciones = [...pregunta.querySelectorAll("opcion")];
+
             opciones.forEach((opcion, i) => {
-                const texto = opcion.textContent.replace(/^[a-d]\)\s*/i, '').trim();
+                const texto = opcion.textContent.trim().replace(/^[a-d]\)\s*/i, ''); // Eliminar "a) "
                 const nodo = nuevoDoc.createElement(letras[i]);
                 nodo.textContent = texto;
                 nuevaPregunta.appendChild(nodo);
             });
 
-            // Respuesta correcta
+            // Respuesta correcta (en mayúscula)
+            const respuesta = pregunta.querySelector("respuesta")?.textContent.trim().toUpperCase();
             const nodoRespuesta = nuevoDoc.createElement("respuesta_correcta");
             nodoRespuesta.textContent = respuesta;
+
+            // Si existe la explicación, se pone como atributo
+            const explicacion = pregunta.querySelector("explicacion")?.textContent.trim();
             if (explicacion) {
                 nodoRespuesta.setAttribute("explicacion", explicacion);
             }
+
             nuevaPregunta.appendChild(nodoRespuesta);
 
             root.appendChild(nuevaPregunta);
         });
 
-        const finalDoc = nuevoDoc.implementation.createDocument(null, "documento", null);
-        finalDoc.replaceChild(root, finalDoc.documentElement);
-
+        // Serializar el documento y escribirlo en el archivo de salida
         const serializer = new dom.window.XMLSerializer();
-        fs.writeFileSync(salidaPath, serializer.serializeToString(finalDoc), "utf-8");
+        fs.writeFileSync(salidaPath, serializer.serializeToString(nuevoDoc), "utf-8");
 
         console.log(`✅ XML transformado exitosamente en: ${salidaPath}`);
     } catch (error) {
@@ -58,4 +61,4 @@ function convertirXMLaNuevoFormato(entradaPath, salidaPath) {
 }
 
 // Ejecutar con archivo de entrada y salida
-convertirXMLaNuevoFormato("archivo.xml", "formato_convertido.xml");
+convertirXMLaNuevoFormato("./assets/xml/Programacion.xml", "Programacion.xml");
