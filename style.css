@@ -26,7 +26,7 @@ body {
   margin: auto;
   justify-content: center;
   flex-wrap: wrap;
-  background-color:aliceblue;
+  background-color:darkblue;
   background-image: url("./assets/bg.jpg"); 
   background-position: center;
   background-size: cover;
@@ -79,29 +79,34 @@ button {
   width: 100%;
   box-sizing:border-box;
  }
+ li{
+  width: 90%;
+ }
 
- li {
-  width:90%;
+ button {
+  width: 90%;
   padding: 10px 15px;
-  margin: 5px;
+  margin: 5px auto;
   background: linear-gradient(135deg, #007BFF, #0056b3);
   color: white;
   border-radius: 5px;
   text-align: center;
-  box-sizing:border-box;
+  display: block;
+  box-sizing: border-box;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  list-style: none;
+  border: none;
+  font-size: 16px;
 }
 
-li:hover {
+button:hover {
   background: linear-gradient(135deg, #0056b3, #00408b);
   transform: scale(1.05);
 }
- a{
-  text-decoration: none;
-  color: antiquewhite;
- }
+
+button:focus {
+  outline: 2px solid #ffffff; /* Resaltado para accesibilidad */
+}
 
  @media (max-width: 460px) {
   body{

@@ -47,14 +47,14 @@ function mostrarPregunta() {
   // Crear botones con las opciones correctamente referenciadas
   [preguntaActual.A, preguntaActual.B, preguntaActual.C, preguntaActual.D].forEach(opcion => {
     const opcionCodificada = encodeURIComponent(opcion);
-    opcionesHTML += `<li><a href="#" onclick="verificarRespuesta(decodeURIComponent('${opcionCodificada}'))">${opcion}</a></li>`;
+    opcionesHTML += `<li><button onclick="verificarRespuesta(decodeURIComponent('${opcionCodificada}'))">${opcion}</button></li>`;
   });
 
   document.getElementById("pregunta-container").innerHTML = `
       <h3>${preguntaActual.enunciado}</h3>
       <ul>
       ${opcionesHTML}
-      <li><a href="#" onclick="saltar()">Dejar sin contestar</a></li>
+      <li><button onclick="saltar()">Dejar sin contestar</button></li>
       </ul>
       <p>Pregunta ${indicePregunta+1} de 40 . Preguntas XML total: ${cantidadPreguntas}</p>`;
 }
@@ -65,22 +65,27 @@ function verificarRespuesta(respuestaSeleccionada) {
 
     // Obtener el contenido real de la opción correcta
     const respuestaCorrectaTexto = preguntaActual[preguntaActual.respuestaCorrecta];
+    respuestaDiv.style.display = "block";
 
     if (respuestaSeleccionada === respuestaCorrectaTexto) {
         aciertos ++;
         respuestaDiv.innerHTML = `¡Correcto!`;
         respuestaDiv.style.color = "whitesmoke";
+        setTimeout(() => {
+          respuestaDiv.style.display = "none";
+          cargarSiguientePregunta();
+        }, 2000); // 2 segundos
     } else {
         respuestaDiv.innerHTML = `Incorrecto. La respuesta correcta es: ${respuestaCorrectaTexto}`;
         respuestaDiv.style.color = "crimson";
         fallos++;
+        setTimeout(() => {
+          respuestaDiv.style.display = "none";
+          cargarSiguientePregunta();
+        }, 6000); // 6 segundos
     }
 
-    respuestaDiv.style.display = "block";
-    setTimeout(() => {
-        respuestaDiv.style.display = "none";
-        cargarSiguientePregunta();
-    }, 3000); // 3 segundos
+
 }
 function saltar(){
     saltadas++;
