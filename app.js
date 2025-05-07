@@ -98,9 +98,17 @@ function cargarSiguientePregunta() {
   indicePregunta++;
   mostrarPregunta();
 }
-// Función para seleccionar 15 preguntas aleatorias
-function obtenerPreguntasAleatorias(preguntas) {
-  return preguntas.sort(() => Math.random() - 0.5).slice(0, 40);
+// Función para seleccionar 40 preguntas aleatorias
+function obtenerPreguntasAleatorias(preguntas, cantidad = 40) {
+  const preguntasCopia = [...preguntas]; // Copia para no modificar el original
+
+  // Fisher-Yates Shuffle
+  for (let i = preguntasCopia.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [preguntasCopia[i], preguntasCopia[j]] = [preguntasCopia[j], preguntasCopia[i]];
+  }
+
+  return preguntasCopia.slice(0, cantidad);
 }
 
 //cargar xml al cargar la ventana
