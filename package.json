@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "jsdom": "^26.1.0",
-    "pdf-parse": "^1.1.1"
+    "pdf-parse": "^1.1.1",
+    "xml-formatter": "^3.6.5"
   }
 }
