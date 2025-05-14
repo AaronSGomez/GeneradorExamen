@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Conversor XML de Preguntas</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; max-width: 900px; margin: auto; }
+    textarea, pre { width: 100%; height: 250px; font-family: monospace; white-space: pre-wrap; }
+    input, button { margin-top: 10px; display: block; }
+  </style>
+</head>
+<body>
+
+  <h2>Conversor de preguntas a XML</h2>
+
+  <input type="file" id="fileInput" accept=".txt,.xml">
+  <button onclick="procesarArchivo()">Convertir</button>
+
+  <h3>Resultado XML:</h3>
+  <pre id="output"></pre>
+
+  <script>
+    function escapeHTML(text) {
+      return text
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function contieneCodigo(lineas) {
+      return lineas.some(l =>
+        l.match(/(public\s+class|System\.out|for\s*\(|int\s+\w+\[|static\s+void|throw\s+new)/)
+      );
+    }
+
+    function procesarArchivo() {
+      const archivo = document.getElementById('fileInput').files[0];
+      if (!archivo) return alert("Selecciona un archivo primero.");
+
+      const lector = new FileReader();
+      lector.onload = function(e) {
+        const contenido = e.target.result;
+        const bloques = contenido.split(/\n\s*\n/); // separa por saltos dobles
+        const xmlPreguntas = bloques.map(convertirABloqueXML).join("\n\n");
+        document.getElementById("output").textContent = xmlPreguntas;
+      };
+      lector.readAsText(archivo);
+    }
+function convertirABloqueXML(bloque) {
+  const lineas = bloque.trim().split("\n");
+
+  let enunciadoLineas = [];
+  const opciones = { A: '', B: '', C: '', D: '' };
+  let respuesta = '';
+  let explicacion = '';
+
+  for (let i = 0; i < lineas.length; i++) {
+    const l = lineas[i].trim();
+
+    if (/^respuesta_correcta\s+[ABCD]$/i.test(l)) {
+      respuesta = l.split(/\s+/)[1].toUpperCase();
+      continue; // Evita que entre al enunciado
+    }
+
+    if (/^explicacion\b/i.test(l)) {
+      explicacion = l.substring(l.indexOf(' ') + 1).trim();
+      continue; // Evita que entre al enunciado
+    }
+
+    if (/^A\b/.test(l)) {
+      opciones.A = l.substring(1).trim();
+      continue;
+    }
+    if (/^B\b/.test(l)) {
+      opciones.B = l.substring(1).trim();
+      continue;
+    }
+    if (/^C\b/.test(l)) {
+      opciones.C = l.substring(1).trim();
+      continue;
+    }
+    if (/^D\b/.test(l)) {
+      opciones.D = l.substring(1).trim();
+      continue;
+    }
+
+    enunciadoLineas.push(l);
+  }
+
+  const tieneCodigo = contieneCodigo(enunciadoLineas);
+  let enunciadoXML = '';
+
+  if (tieneCodigo) {
+    const texto = [];
+    const codigo = [];
+    let enCodigo = false;
+
+    for (let l of enunciadoLineas) {
+      if (!enCodigo && l.match(/(public|class|System\.out|throw\s+new|int\s+\w+\[|for\s*\(|static\s+void)/)) {
+        enCodigo = true;
+      }
+      if (enCodigo) codigo.push(l);
+      else texto.push(l);
+    }
+
+    const textoPlano = escapeHTML(texto.join("\n").trim());
+    const codigoEscapeado = escapeHTML(codigo.join("\n").trim());
+
+    enunciadoXML = `<![CDATA[${textoPlano}\n<pre><code class="language-java">\n${codigoEscapeado}\n</code></pre>]]>`;
+  } else {
+    const textoPlano = escapeHTML(enunciadoLineas.join("\n").trim());
+    enunciadoXML = `<![CDATA[${textoPlano}]]>`;
+  }
+
+  const respuestaCorrectaTag = `<respuesta_correcta explicacion="${escapeHTML(explicacion)}">${respuesta}</respuesta_correcta>`;
+
+  return `
+<pregunta>
+  <enunciado>${enunciadoXML}</enunciado>
+  <A>${escapeHTML(opciones.A)}</A>
+  <B>${escapeHTML(opciones.B)}</B>
+  <C>${escapeHTML(opciones.C)}</C>
+  <D>${escapeHTML(opciones.D)}</D>
+  ${respuestaCorrectaTag}
+</pregunta>`.trim();
+}
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,397 @@
+¿CUÁL ES LA FINALIDAD DEL USO DE THIS EN UN CONSTRUCTOR O MÉTODO?
+A Referenciar los atributos del objeto actual para evitar ambigüedades
+B Crear métodos vacíos
+C Eliminar atributos duplicados
+D Declarar atributos como privados
+respuesta_correcta A
+
+¿POR QUÉ SE RECOMIENDA USAR MÉTODOS GETTERS Y SETTERS EN LUGAR DE ACCEDER DIRECTAMENTE A LOS ATRIBUTOS?
+A Para escribir menos código
+B Para mantener el principio de encapsulamiento y controlar el acceso
+C Porque Java no permite el acceso directo
+D Para poder usar static en los atributos
+respuesta_correcta B
+
+¿CUÁL ES UNA CARACTERÍSTICA DE LOS CONSTRUCTORES EN JAVA?
+A Devuelven siempre un valor
+B Pueden tener nombre distinto al de la clase
+C Deben ser static y public
+D Tienen el mismo nombre que la clase y no devuelven valo
+respuesta_correcta D
+
+¿QUÉ OCURRE AL EJECUTAR ESTE CÓDIGO? public class Alumno {
+private String nombre;
+public Alumno(String n){
+this.nombre=n;
+}
+}
+A Error: falta el método getNombre()
+B Se crea el objeto correctamente y se imprime
+"Alumno creado“
+C El constructor debe ser static
+D El atributo nombre se imprime automáticamente
+respuesta_correcta B
+
+¿ES CORRECTA ESTA DEFINICIÓN DE UN CONSTRUCTOR? public class Libro{
+private String titulo;
+public void Libro(String t){
+titulo=t;
+}
+}
+A No, ya que el título es private
+B Si, es correcto.
+C No, porque falta un parámetro.
+D No, porque tiene void, y por tanto no es
+un constructor sino un método
+respuesta_correcta D
+
+¿CUÁL ES LA PRINCIPAL VENTAJA DE UN ARRAYLIST FRENTE A UN ARRAY TRADICIONAL?
+A Es más rápido
+B Su tamaño es dinámico
+C Permite tipos primitivos
+D No necesita importar librerías
+respuesta_correcta B
+
+¿QUÉ DIFERENCIA PRINCIPAL HAY ENTRE ARRAYLIST Y LINKEDLIST?
+A LinkedList no permite duplicados, en cambio el arraylist si, ya que va por posición
+B LinkedList es más eficiente para insertar/eliminar elementos
+C ArrayList no se puede ordenar, en cambio un arraylist es muy fácil de ordenar
+D ArrayList ocupa más memoria ya que guarda posiciones
+respuesta_correcta B
+
+¿QUÉ TIPO DE ESTRUCTURA ES UNA PILA (STACK)?
+A FIFO
+B RIFO
+C Aleatoria
+D LIFO
+respuesta_correcta D
+
+¿QUÉ OCURRE SI POP() SE LLAMA SOBRE UNA COLA VACÍA?
+A Devuelve null
+B Lanza una excepción
+C Reinicia la cola
+D Elimina el frente
+respuesta_correcta B
+
+¿QUÉ DIFERENCIA HAY ENTRE POP() Y PEEK EN UNA STACK?
+A pop() elimina y devuelve el elemento en la cima. Peek() devuelve el elemento de la cima
+sin eliminarlo.
+B Peek() elimina y devuelve el elemento en la cima. Pop() devuelve el elemento de la cima
+sin eliminarlo.
+C pop() devuelve true si la pila está vacia, peek devuelve un número menor que cero
+D pop() elimina y devuelve el elemento en la cima. Peek() apila un elemento en la cima
+respuesta_correcta A
+
+¿QUÉ IMPRIME ESTE CÓDIGO? Stack<String> pila = new Stack<>();
+pila.push("uno")
+pila.push("dos")
+System.out.println(pila.pop());
+A Uno
+B Dos
+C Error
+D null
+respuesta_correcta B
+
+¿QUÉ TIPO DE ESTRUCTURA REPRESENTA UNA COLA (QUEUE) EN JAVA?
+A LIFO
+B FIFO
+C Circular doble
+D Bidireccional
+respuesta_correcta B
+
+¿QUÉ CLASE SE USA COMÚNMENTE PARA IMPLEMENTAR UNA COLA EN JAVA?
+A LinkedList
+B ArrayList
+C TreeSet
+D Stack
+respuesta_correcta A
+
+¿QUÉ OCURRE SI SE LLAMA REMOVE() SOBRE UNA COLA VACÍA?
+A Devuelve null
+B Lanza una excepción
+C Se bloquea el programa
+D Elimina el último valor
+respuesta_correcta B
+
+¿QUÉ HACE ESTE CÓDIGO? Queue <String> cola = new LinkedList<>();
+cola.add("A");
+cola.add("B");
+System.out.println(cola.remove());
+A Null
+B B
+C Error de compilación
+D A
+respuesta_correcta D
+
+¿QUÉ HACE EL MÉTODO INSERTAR() EN UNA IMPLEMENTACIÓN DE COLA ?
+A Elimina el último elemento
+B Inserta al principio
+C Añade un nuevo elemento al final
+D Reemplaza el primero
+respuesta_correcta C
+
+¿QUÉ PALABRA CLAVE SE UTILIZA EN JAVA PARA INDICAR QUE UNA CLASE HEREDA DE OTRA?
+A Inherit
+B Include
+C Extends
+D implements
+respuesta_correcta C
+
+¿QUÉ PALABRA CLAVE PERMITE ACCEDER A UN ATRIBUTO O MÉTODO SOBRESCRITO EN LA SUPERCLASE?
+A This
+B Super
+C Parent
+D base
+respuesta_correcta B
+
+¿CUÁL DE LAS SIGUIENTES AFIRMACIONES ES VERDADERA SOBRE LAS CLASES ABSTRACTAS EN JAVA?
+A Pueden instanciarse directamente.
+B Todos sus métodos deben ser abstractos.
+C Solo se usan para interfaces o en el interior de otras clases.
+D Pueden contener métodos abstractos y no abstractos.
+respuesta_correcta D
+
+¿CUÁL ES LA DIFERENCIA PRINCIPAL ENTRE UNA CLASE ABSTRACTA Y UNA INTERFAZ EN JAVA?
+A Las interfaces pueden tener constructores
+B Las clases abstractas no permiten atributos
+C Las interfaces no tienen implementación, solo declaraciones de métodos
+D Las clases abstractas no tienen implementación, solo declaraciones de métodos
+respuesta_correcta C
+
+¿QUÉ IMPRIME EL SIGUIENTE CÓDIGO? class Empleado{
+ public String getTipo(){
+  return "Empleado";
+}
+}
+class Gerente extends Empleado{
+ public String getTipo(){
+  return "Gerente";
+}
+Empleado e= new Gerente();
+System.out.println(e.getTipo());
+A Empleado
+B Gerente
+C Error de compilación
+D null
+respuesta_correcta B
+
+¿QUÉ ES EL POLIMORFISMO EN JAVA?
+A La capacidad de una clase de cambiar de nombre
+B La posibilidad de que un mismo método se comporte de forma diferente según el
+objeto que lo invoque
+C El uso de muchas clases a la vez
+D El proceso de ocultar atributos privados
+respuesta_correcta B
+
+¿QUÉ IMPRIME EL SIGUIENTE CÓDIGO? class Vehiculo {
+public void encender() {
+  System.out.println("Vehículo encendido");
+}
+}
+class Moto extends Vehiculo {
+  public void encender() {
+    System.out.println("Moto encendida");
+  }
+}
+public class Main {
+  public static void main(String[] args) {
+    Vehiculo v = new Moto();
+    v.encender();
+  }
+}
+A Moto encendida
+B Vehículo encendido
+C Error
+D null
+respuesta_correcta A
+
+¿CUÁL DE LAS SIGUIENTES AFIRMACIONES ES VERDADERA SOBRE LAS INTERFACES EN JAVA?
+A Pueden contener atributos private
+B Deben contener al menos un método main
+C Solo pueden ser usadas en clases abstractas
+D No pueden tener atributos de instancia
+respuesta_correcta D
+
+¿QUÉ PALABRA CLAVE SE USA PARA DECLARAR UNA CLASE ABSTRACTA EN JAVA?
+A Interface
+B Abstract
+C Super
+D static
+respuesta_correcta B
+
+¿TIENE ALGÚN ERROR ESTE CÓDIGO? abstract class Figura{
+ abstract void dibujar();
+}
+class Cuadrado extends Figura{}
+A Si, cuadrado no implementa el método
+abstracto dibujar().
+B No, el código es correcto.
+C Si, Cuadrado debe ser abstracto también.
+D Si, falta el constructor.
+respuesta_correcta A
+
+¿QUÉ PERMITE LA IMPLEMENTACIÓN MÚLTIPLE DE INTERFACES EN JAVA?
+A Heredar de varias clases a la vez
+B Reutilizar atributos entre clases, siempre que sean public o protected
+C Implementar varios comportamientos distintos en una sola clase
+D Evitar el uso de métodos abstractos y así garantizar el encapsulamiento
+respuesta_correcta C
+
+¿QUÉ OCURRE SI INTENTAMOS CREAR UN OBJETO DIRECTAMENTE DE UNA CLASE ABSTRACTA?
+A Se crea con métodos vacíos
+B Da error de compilación
+C Se crea si tiene constructor
+D Solo da error si tiene métodos abstractos
+respuesta_correcta B
+
+¿PARA QUÉ SIRVE UN BLOQUE TRY-CATCH EN JAVA?
+A Para ordenar excepciones
+B Para evitar que el programa termine abruptamente ante un error
+C Para ejecutar código en paralelo
+D Para mejorar el rendimiento al no tener que utilizar tantos bucles
+respuesta_correcta B
+
+¿QUÉ OCURRE SI NO SE CAPTURA UNA EXCEPCIÓN NO CONTROLADA (UNCHECKED)?
+A El programa se detiene con un error en tiempo de ejecución.
+B El compilador da error.
+C Se ignora automáticamente.
+D Se convierte en una excepción controlada.
+respuesta_correcta A
+
+¿CUÁL DE ESTAS ESTRUCTURAS ES VÁLIDA PARA EL MANEJO DE EXCEPCIONES?
+A try { } then { }
+B catch { } try { }
+C if (error) { } else { }
+D try { } catch (Exception e) { }
+respuesta_correcta D
+
+¿QUÉ HACE EL BLOQUE FINALLY?
+A Se ejecuta solo si ocurre una excepción
+B Se ejecuta siempre, ocurra o no la excepción
+C Es obligatorio en todo try-catch
+D Solo funciona con IOException
+respuesta_correcta B
+
+¿QUÉ IMPRIME ESTE CÓDIGO? try{
+ int a = 10 / 0;
+}catch (ArithmeticException e){
+ System.out.println ("Error: " + e.getMessage());
+}
+A Error: null
+B Error: / by zero
+C 0
+D Error de compilación
+respuesta_correcta B
+
+
+¿QUÉ CLASE ES LA BASE DE TODAS LAS EXCEPCIONES EN JAVA?
+A Throwable
+B Error
+C RuntimeException
+D Exception
+respuesta_correcta D
+
+¿QUÉ TIPO DE EXCEPCIONES SE DEBEN CAPTURAR
+OBLIGATORIAMENTE?
+A Unchecked
+B Checked
+C RuntimeException
+D NullPointerException
+respuesta_correcta B
+
+
+¿CUÁL DE ESTAS ES UNA EXCEPCIÓN NO
+CONTROLADA (UNCHECKED)?
+A IOException
+B SQLException
+C FileNotFoundException
+D ArithmeticException
+respuesta_correcta D
+
+¿CUÁL DE ESTAS EXCEPCIONES DEBE MANEJARSE
+CON TRY-CATCH O DECLARARSE CON THROWS?
+A NullPointerException
+B ArithmeticException
+C FileNotFoundException
+D ArrayIndexOutOfBoundsException
+respuesta_correcta C
+
+¿QUÉ INDICA UN STACK TRACE AL PRODUCIRSE
+UNA EXCEPCIÓN?
+A La pila de llamadas hasta el punto del error
+B El tiempo de ejecución
+C El contenido de los arrays
+D Las excepciones que no fueron lanzadas
+respuesta_correcta A
+
+¿QUÉ ES UNA EXCEPCIÓN PERSONALIZADA?
+A Una excepción del sistema renombrada
+B Una clase que hereda de Exception o RuntimeException creada por el programador
+C Una excepción automática
+D Un error de sintaxis, que se soluciona al hacer throws desde la clase FileException
+respuesta_correcta B
+
+¿CÓMO SE LANZA UNA EXCEPCIÓN
+PERSONALIZADA?
+A throw new MyException;
+B throw new MiExcepcion("mensaje");
+C throws MiExcepcion();
+D launch MiExcepcion();
+respuesta_correcta B
+
+¿CUÁL ES EL ERROR EN EL SIGUIENTE CÓDIGO? try{
+ int a = 10 / 0;
+}catch {
+ Sysyem.out.println("Error");
+}
+
+A El bloque try está mal indentado
+B System.out.println no puede usarse en catch
+C No se puede dividir en un bloque try
+D Falta el tipo de excepción entre paréntesis en catch
+respuesta_correcta D
+
+¿CUÁL ES EL PROBLEMA EN ESTE CÓDIGO? public static void main(String[] args){
+ FileReader fr = new FileReader("datos.txt");
+}
+A Falta manejar la excepción con try-catch o declarar throws IOException
+B FileReader solo acepta ficheros .xml
+C El método main no puede tener código con archivos
+D FileReader requiere usar System.in
+respuesta_correcta A
+
+¿QUÉ ERROR CONTIENE ESTE CÓDIGO? try {
+ int[] array = new int[3];
+ array[5] = 10;
+} catch (IndexOutOfBoundsException e) {
+ System.out.println("Fuera de rango");
+}
+A El tipo de excepción debe ser ArrayIndexOutOfBoundsException para capturar correctamente
+B Falta el bloque finally
+C El array debe declararse fuera del try
+D El try no puede tener arrays
+respuesta_correcta A
+
+
+¿QUÉ OCURRE SI SE EJECUTA ESTE CÓDIGO?try {
+  System.out.println("Inicio");
+} finally{
+ System.out.println("Final");
+}
+A Lanza una excepción
+B Solo imprime "Final“
+C Imprime ambos mensajes: "Inicio" y luego "Final“
+D No compila sin catch
+respuesta_correcta C
+
+¿CUÁL ES EL ERROR EN ESTA DECLARACIÓN DE EXCEPCIÓN PERSONALIZADA? public static void main(String[] args){
+ public void MiExcepcion(String mensaje){
+  super(mensaje);
+}
+}
+A Exception no se puede extender.
+B Falta implementar un método, controlando la excepción.
+C super(mensaje) debe ir en un método main.
+D El constructor tiene void: debería ser un constructor real, sin tipo de retorno.
+respuesta_correcta D
+
